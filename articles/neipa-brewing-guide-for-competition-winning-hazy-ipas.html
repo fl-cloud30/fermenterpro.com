@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CDMLC8ZVVD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CDMLC8ZVVD');
+</script>
+<!-- Global Tracking Functions -->
+<script>
+function trackBuyClick(location) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click_buy_domain', {
+      'event_category': 'CTA',
+      'event_label': 'Buy Domain - ' + location,
+      'value': 1
+    });
+  }
+}
+
+function trackMarketplaceClick() {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click_marketplace', {
+      'event_category': 'CTA',
+      'event_label': 'Marketplace Link',
+      'value': 1
+    });
+  }
+}
+
+function trackFormSubmit() {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'form_submission', {
+      'event_category': 'Contact',
+      'event_label': 'Contact Form',
+      'value': 5
+    });
+  }
+  return true;
+}
+
+function trackFAQClick(question) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'faq_click', {
+      'event_category': 'FAQ',
+      'event_label': question,
+      'value': 1
+    });
+  }
+}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEIPA Brewing Guide for Competition Hazy IPAs</title>
+<meta name="description" content="Master biotransformation hopping, London III yeast, and water chemistry to brew competition-winning New England IPA recipes that score gold brewing medals.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="canonical" href="https://fermenterpro.com/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.html">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="new england ipa recipe, homebrewing competitions, biotransformation hopping, London Ale III yeast, NEIPA water chemistry, hazy IPA, BJCP judging, competition brewing">
+
+<!-- Open Graph -->
+<meta property="og:title" content="NEIPA Brewing Guide for Competition-Winning Hazy IPAs">
+<meta property="og:description" content="Master biotransformation hopping and water chemistry to brew competition-winning New England IPAs.">
+<meta property="og:url" content="https://fermenterpro.com/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="FermenterPro.com">
+<meta property="og:image" content="https://fermenterpro.com/images/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NEIPA Brewing Guide for Competition-Winning Hazy IPAs">
+<meta name="twitter:description" content="Master biotransformation hopping and water chemistry for gold medal NEIPAs.">
+<meta name="twitter:image" content="https://fermenterpro.com/images/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.jpg">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "NEIPA Brewing Guide for Competition-Winning Hazy IPAs",
+  "description": "Master biotransformation hopping, London III yeast, and water chemistry to brew competition-winning New England IPA recipes.",
+  "datePublished": "2025-11-30",
+  "author": {
+    "@type": "Person",
+    "name": "Fermenter Pro"
+  },
+  "image": "https://fermenterpro.com/images/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "FermenterPro.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fermenterpro.com/logo.png"
+    }
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fermenterpro.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fermenterpro.com/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "Advanced Homebrewing", "item": "https://fermenterpro.com/categories/advanced-homebrewing.html"},
+      {"@type": "ListItem", "position": 4, "name": "NEIPA Brewing Guide", "item": "https://fermenterpro.com/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.html"}
+    ]
+  }
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#17cf54',
+        secondary: '#0f8c3a',
+        accent: '#22ff66',
+        dark: '#111813',
+      },
+    },
+  },
+};
+</script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111813;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(23, 207, 84, 0.1);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #17cf54 0%, #0f8c3a 100%);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #17cf54 0%, #0f8c3a 100%);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(23, 207, 84, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(23, 207, 84, 0.6);
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #17cf54 #f1f1f1;
+  margin-top: 0.5rem;
+  z-index: 1000;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: #17cf54;
+  border-radius: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #0f8c3a;
+}
+
+.dropdown-menu.active {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+}
+
+.dropdown-menu a:hover {
+  background: #f3f4f6;
+  color: #17cf54;
+}
+
+.article-content {
+  line-height: 1.7;
+}
+
+.article-content h2 {
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+  scroll-margin-top: 100px;
+}
+
+.article-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+
+.article-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.article-content p {
+  margin-bottom: 1.25rem;
+  color: #374151;
+}
+
+.article-content ul,
+.article-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.article-content ul {
+  list-style-type: disc;
+}
+
+.article-content ol {
+  list-style-type: decimal;
+}
+
+.article-content li {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.article-content strong {
+  color: #111;
+  font-weight: 700;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #17cf54;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #6B7280;
+}
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.875rem;
+}
+
+.article-content th {
+  background: #f3f4f6;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #17cf54;
+}
+
+.article-content td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+  <div class="container mx-auto px-4 md:px-8 py-3 md:py-4">
+    <div class="flex items-center justify-between gap-4">
+      <a href="../index.html" class="flex items-center gap-2 md:gap-3">
+        <span class="material-symbols-outlined text-primary text-2xl md:text-3xl">science</span>
+        <h2 class="text-base md:text-xl font-bold text-gray-900">FermenterPro.com</h2>
+      </a>
+      
+      <div class="flex items-center gap-2 md:gap-4">
+        <div class="dropdown">
+          <button id="menuBtn" class="text-gray-700 hover:text-primary font-semibold text-sm md:text-base transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-lg md:text-xl">menu</span>
+            <span class="hidden sm:inline">Menu</span>
+            <span class="material-symbols-outlined text-lg">expand_more</span>
+          </button>
+          <div id="mainMenu" class="dropdown-menu" style="min-width: 220px;">
+            <a href="../index.html" style="font-weight: 600;">Home</a>
+            <div style="padding: 8px 20px; font-weight: 600; color: #17cf54; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Use Cases</div>
+            <a href="../all-use-cases.html" style="padding-left: 30px;">All Use Cases</a>
+            <a href="../use-cases/fermentation-blog-and-educational-media.html" style="padding-left: 30px;">Fermentation Blog</a>
+            <a href="../use-cases/fermentation-equipment-e-commerce-store.html" style="padding-left: 30px;">Equipment Store</a>
+            <a href="../use-cases/fermentation-online-learning-platform.html" style="padding-left: 30px;">Online Learning Platform</a>
+            <a href="../use-cases/fermentation-community-forum-and-marketplace.html" style="padding-left: 30px;">Community Forum</a>
+            <a href="../use-cases/fermentation-subscription-box-and-premium-newsletter.html" style="padding-left: 30px;">Subscription Box</a>
+            <a href="../use-cases/fermentation-consulting-and-custom-solutions.html" style="padding-left: 30px;">Consulting Services</a>
+            <div style="padding: 8px 20px; font-weight: 600; color: #17cf54; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 8px;">Blog</div>
+            <a href="../all-articles.html" style="padding-left: 30px;">All Articles</a>
+            <a href="../categories/advanced-homebrewing.html" style="padding-left: 30px;">Advanced Homebrewing</a>
+            <a href="../categories/alternative-protein-bioreactors.html" style="padding-left: 30px;">Alternative Protein Bioreactors</a>
+            <a href="../categories/commercial-food-fermentation.html" style="padding-left: 30px;">Commercial Food Fermentation</a>
+            <a href="../categories/craft-spirits-distillation.html" style="padding-left: 30px;">Craft Spirits Distillation</a>
+            <a href="../categories/pharmaceutical-fermentation.html" style="padding-left: 30px;">Pharmaceutical Fermentation</a>
+          </div>
+        </div>
+        <button onclick="trackBuyClick('header'); window.open('https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com', '_blank');" 
+                class="btn-primary text-white font-bold px-3 py-2 md:px-6 md:py-2.5 rounded-lg text-xs md:text-sm">
+          Buy Domain
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<nav class="bg-gradient-to-r from-gray-50 to-green-50 py-5 px-4 md:px-8 border-b border-gray-200">
+  <div class="container mx-auto max-w-4xl">
+    <div class="flex items-center flex-wrap gap-2 text-sm">
+      <a href="../index.html" class="flex items-center gap-1 px-3 py-1.5 rounded-md text-gray-600 hover:text-white hover:bg-primary transition-all duration-200 font-medium">
+        <span class="material-symbols-outlined" style="font-size: 18px;">home</span>
+        <span>Home</span>
+      </a>
+      <span class="text-gray-400">/</span>
+      <a href="../blog.html" class="flex items-center gap-1 px-3 py-1.5 rounded-md text-gray-600 hover:text-white hover:bg-primary transition-all duration-200 font-medium">
+        <span class="material-symbols-outlined" style="font-size: 18px;">article</span>
+        <span>Blog</span>
+      </a>
+      <span class="text-gray-400">/</span>
+      <a href="../categories/advanced-homebrewing.html" class="flex items-center gap-1 px-3 py-1.5 rounded-md text-gray-600 hover:text-white hover:bg-primary transition-all duration-200 font-medium">
+        <span class="material-symbols-outlined" style="font-size: 18px;">science</span>
+        <span>Advanced Homebrewing</span>
+      </a>
+      <span class="text-gray-400">/</span>
+      <span class="flex items-center gap-1 px-3 py-1.5 rounded-md bg-primary/10 text-primary font-semibold">
+        <span>NEIPA Competition Guide</span>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<!-- Article Header -->
+<article class="py-12 px-4 md:px-8">
+  <div class="container mx-auto max-w-4xl">
+    
+    <header class="mb-12">
+      <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-bold uppercase mb-4">
+        Advanced Homebrewing
+      </span>
+      <h1 class="text-4xl md:text-5xl font-black mb-6 text-gray-900 leading-tight">
+        NEIPA Brewing Guide for Competition-Winning Hazy IPAs
+      </h1>
+      <div class="flex items-center gap-6 text-gray-600 text-sm mb-8">
+        <time datetime="2025-11-30">November 30, 2025</time>
+        <span>•</span>
+        <span>25 min read</span>
+      </div>
+      <img src="../images/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.jpg" 
+           alt="Competition-winning New England IPA hazy beer brewing guide" 
+           class="w-full aspect-video object-contain bg-gray-50 rounded-2xl shadow-lg mb-8">
+    </header>
+
+    <!-- Article Content -->
+    <div class="article-content prose prose-lg max-w-none">
+    
+    <p class="text-xl text-gray-700 font-medium mb-8 leading-relaxed">
+      Brewing a competition-winning New England IPA requires precise water chemistry manipulation, calculated biotransformation hopping schedules, and yeast strain selection that amplifies tropical ester production. BJCP judges evaluate NEIPAs on specific technical criteria that separate amateur attempts from medal-worthy examples.
+    </p>
+
+    <p>
+      This guide targets homebrewers entering BJCP competitions in Category 21B Specialty IPA: New England IPA. Competition-level brewing demands understanding chloride-to-sulfate ratios, diacetyl management with London Ale III yeast, and biotransformation protocols that maximize tropical character while minimizing grassy flavors.
+    </p>
+
+    <p>
+      Expect to invest <strong>$800-1,500</strong> in water chemistry equipment, temperature-controlled fermentation, and oxygen-free transfer systems. An additional <strong>$80-120 per five-gallon batch</strong> covers premium ingredients. Master these techniques to produce NEIPAs targeting 6.5-7.5% ABV with calculated 50-70 IBU that drink at 20 IBU, achieving hop aroma lasting 6-8 weeks post-packaging.
+    </p>
+
+    <div class="bg-green-50 p-6 rounded-lg my-8">
+      <h3 class="text-xl font-bold mb-3 text-gray-900">Table of Contents</h3>
+      <p class="text-gray-700 mb-4 text-sm">
+        Navigate directly to the section you need. Click any link below to jump to detailed information about brewing competition-winning NEIPAs.
+      </p>
+      <nav class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+        <a href="#technical-foundation" class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+          1. Technical Foundation
+        </a>
+        <a href="#malt-bills" class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+          2. Malt Bills and Grain Selection
+        </a>
+        <a href="#water-chemistry" class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+          3. Water Chemistry
+        </a>
+        <a href="#biotransformation" class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+          4. Biotransformation Hopping
+        </a>
+        <a href="#yeast-management" class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+          5. Yeast Management
+        </a>
+        <a href="#packaging" class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+          6. Packaging and Oxygen Management
+        </a>
+        <a href="#competition-strategy" class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+          7. Competition Strategy
+        </a>
+        <a href="#action-plan" class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+          8. Action Plan and Conclusion
+        </a>
+      </nav>
+    </div>
+
+    <h2 id="technical-foundation">1. Technical Foundation: The Science of Hazy IPA Production</h2>
+
+    <p>
+      New England IPAs represent deliberate manipulation of brewing chemistry to create stable haze, soft bitterness perception, and intense fruit-forward hop character. Understanding these foundational principles transforms guesswork into repeatable, medal-winning results. Master these four pillars-haze formation, biotransformation, water chemistry, and yeast selection-and you'll control every aspect of your NEIPA's character.
+    </p>
+
+    <p>
+      <strong>Haze formation:</strong> The characteristic haze results from colloidal suspension of hop polyphenols, proteins, beta-glucans from wheat and oats, and yeast cells. Unlike unwanted chill haze, NEIPA haze must remain stable through temperature fluctuations, packaging, and weeks between brewing and judging.
+    </p>
+
+    <p>
+      <strong>Biotransformation:</strong> When hops contact actively fermenting wort, yeast enzymes transform neutral glycosides into intensely aromatic free thiols and terpene alcohols. The critical timing occurs during vigorous fermentation at peak yeast activity, typically 24-48 hours after pitching. This produces characteristic mango, passion fruit, and stone fruit aromatics defining world-class NEIPAs.
+    </p>
+
+    <p>
+      Beyond hop timing, water mineral composition plays an equally critical role in shaping your NEIPA's character. <strong>Water chemistry:</strong> The chloride-to-sulfate ratio determines perceived bitterness and body. NEIPAs require 2:1 ratios or higher to emphasize malt sweetness and suppress harsh bitterness. Chloride at 150-200 ppm creates fuller mouthfeel, while sulfate below 100 ppm avoids crisp bitterness.
+    </p>
+
+    <p>
+      The final foundational element is yeast selection. <strong>London Ale III yeast:</strong> This strain (Wyeast 1318 or White Labs WLP066) produces moderate tropical fruit esters complementing hop aromatics. It exhibits low attenuation of 71-75%, leaving residual sweetness creating juice-like mouthfeel. However, it presents significant diacetyl production challenges requiring extended temperature rests.
+    </p>
+
+    <div class="bg-green-50 rounded-xl p-6 my-8">
+      <p class="text-gray-900 font-medium mb-2">
+        <strong>Common Failure Modes:</strong>
+      </p>
+      <ul class="text-gray-700 list-disc list-inside space-y-1">
+        <li>Oxidation from poor packaging techniques transforming hop aroma to cardboard</li>
+        <li>Diacetyl (buttery flavor) from premature cold crashing with London III yeast</li>
+        <li>Astringency from high sulfate levels or improper mash pH</li>
+        <li>Grassy hop character from extended hop contact or poor biotransformation timing</li>
+        <li>Infection from inadequate sanitation during open fermentation hopping</li>
+      </ul>
+      <p class="text-gray-700 mt-2">
+        At $80-120 per batch in premium ingredients, competition NEIPAs demand flawless execution.
+      </p>
+    </div>
+
+    <h2 id="malt-bills">2. Malt Bills and Grain Selection for NEIPA</h2>
+
+    <p>
+      Your grain bill determines haze stability, body, and how effectively hop character shines through. Competition NEIPAs demand precision-too little wheat and oats produces thin body, too much creates permanent haze that judges penalize. These two proven formulations balance haze, mouthfeel, and hop showcase potential while avoiding common pitfalls.
+    </p>
+
+    <h3>Classic New England Base</h3>
+
+    <p>
+      This foundational approach consistently medals in BJCP competitions. For five gallons targeting 1.068 OG and 7.2% ABV:
+    </p>
+
+    <ul>
+      <li>11 lbs American two-row pale malt</li>
+      <li>3 lbs white wheat malt (30% for protein and haze)</li>
+      <li>2 lbs flaked oats (beta-glucans and mouthfeel)</li>
+      <li>8 oz Carapils (head retention)</li>
+      <li>8 oz rice hulls (prevent stuck sparges)</li>
+    </ul>
+
+    <p><strong>Cost:</strong> $32-38 per batch</p>
+
+    <p>
+      <strong>Mashing:</strong> Single infusion at 154-156°F for 60 minutes. Target mash pH 5.35-5.45 to reduce astringency. The elevated temperature reduces beta-amylase activity, leaving complex sugars London III cannot fully ferment.
+    </p>
+
+    <p>
+      <strong>Expected outcomes:</strong> 75% efficiency, 1.068-1.070 OG, 1.016-1.018 FG, 6.8-7.2% ABV, 3-4 SRM color.
+    </p>
+
+    <p>
+      <strong>Advantages:</strong> Proven competition results, straightforward single infusion mash, excellent haze stability, clean grain character showcasing hops.
+    </p>
+
+    <h3>Oat-Forward Creamy Profile</h3>
+
+    <p>
+      This variation maximizes creamy mouthfeel for judges prioritizing body and texture. For five gallons at 1.065 OG:
+    </p>
+
+    <ul>
+      <li>9 lbs American two-row pale malt</li>
+      <li>2 lbs flaked oats</li>
+      <li>2 lbs oat malt</li>
+      <li>2 lbs white wheat malt</li>
+      <li>1 lb Munich malt (10L)</li>
+      <li>10-12 oz rice hulls (essential)</li>
+    </ul>
+
+    <p><strong>Cost:</strong> $36-42 per batch</p>
+
+    <p>
+      <strong>Mashing:</strong> Same 154-156°F for 60 minutes, plus 10-minute mash-out at 168-170°F for lautering flow. Expect 60-90 minute lautering due to high adjunct percentage.
+    </p>
+
+    <p>
+      <strong>Expected outcomes:</strong> 73-75% efficiency, 1.064-1.066 OG, 1.015-1.017 FG, 6.5-6.9% ABV, 4-5 SRM.
+    </p>
+
+    <p>
+      <strong>Advantages:</strong> Exceptional creamy mouthfeel, distinctive texture differentiating entries, improved head retention.
+    </p>
+
+    <p>
+      <strong>Disadvantages:</strong> Challenging lautering, higher cost, slightly reduced haze stability if packaging delayed.
+    </p>
+
+    <h2 id="water-chemistry">3. Water Chemistry for Competition NEIPA</h2>
+
+    <p>
+      Water chemistry separates competition winners from failed entries-it's the single factor most homebrewers neglect until tasting their harsh, astringent results. NEIPA profiles require chloride dominance and sulfate suppression, creating the soft, pillowy mouthfeel and gentle bitterness judges expect. Get this wrong and even perfect hops and yeast management cannot save your beer.
+    </p>
+
+    <p><strong>Target profile:</strong></p>
+    <ul>
+      <li>Calcium: 80-120 ppm</li>
+      <li>Magnesium: 10-20 ppm</li>
+      <li>Sodium: 30-50 ppm</li>
+      <li>Chloride: 150-200 ppm</li>
+      <li>Sulfate: 50-75 ppm</li>
+      <li>Bicarbonate: below 50 ppm</li>
+      <li><strong>Critical ratio: 2:1 chloride-to-sulfate minimum</strong> (3:1 produces elite softness)</li>
+    </ul>
+
+    <p><strong>Building from RO water</strong> (7-gallon batch):</p>
+    <ul>
+      <li>5g calcium chloride dihydrate (115 ppm Cl, 85 ppm Ca)</li>
+      <li>2g gypsum (55 ppm SO4, 45 ppm Ca)</li>
+      <li>1g Epsom salt (15 ppm Mg)</li>
+      <li>1g table salt (optional for malt character)</li>
+    </ul>
+
+    <p>Result: 150 ppm chloride, 70 ppm sulfate, 130 ppm calcium, 2.1:1 ratio.</p>
+
+    <p>
+      Once minerals are dialed in, pH management becomes the next critical step. <strong>Mash pH:</strong> Target 5.35-5.45 at room temperature, measured 15 minutes into mash. Adjust with lactic acid (1-2 mL/gallon reduces pH by 0.1). This reduces tannin extraction preventing astringency.
+    </p>
+
+    <p>
+      <strong>Equipment costs:</strong> pH meter $50-150, RO system $150-400, brewing salts $25-40 annually. Total: $250-600.
+    </p>
+
+    <h2 id="biotransformation">4. Biotransformation Hopping Protocols</h2>
+
+    <p>
+      Biotransformation timing during active fermentation converts hop glycosides into aromatic free thiols producing intense tropical fruit character-the defining aromatics separating amateur NEIPAs from gold medal winners. Yeast enzymes peak at 24-48 hours post-pitching, creating a narrow window where you can multiply hop aromatics by 3-5x compared to traditional dry hopping. Miss this window and you'll waste expensive hops on grassy, vegetal flavors instead of mango and passionfruit.
+    </p>
+
+    <p>
+      <strong>Optimal hops:</strong> Citra (mango/passionfruit), Mosaic (blueberry/tropical), Galaxy (passionfruit), Nelson Sauvin (white grape), Sabro (coconut/tropical).
+    </p>
+
+    <h3>Single Addition Protocol</h3>
+
+    <p>
+      Simplified approach for reliable results. Add <strong>4 oz Citra/Mosaic blend (2 oz each)</strong> at 36 hours post-pitching when gravity has dropped 30-40%.
+    </p>
+
+    <p>
+      <strong>Execution:</strong> Open fermenter briefly, add hops, reseal, purge with CO₂. Contact time: 3-4 days. Cold crash to 34-36°F.
+    </p>
+
+    <p><strong>Cost:</strong> $32-40</p>
+
+    <p>
+      <strong>Outcomes:</strong> Intense tropical aromatics peaking 7-10 days post-packaging, 55-65 calculated IBU, aroma lasting 6-8 weeks.
+    </p>
+
+    <h3>Double Staging Protocol</h3>
+
+    <p>Advanced complexity for serious competition entries.</p>
+
+    <ul>
+      <li><strong>First addition:</strong> 2 oz Mosaic + 1 oz Galaxy at 24 hours (15-25% gravity drop)</li>
+      <li><strong>Second addition:</strong> 3 oz Citra + 2 oz Mosaic at 60 hours (70-80% gravity drop)</li>
+    </ul>
+
+    <p><strong>Cost:</strong> $64-80 (8 oz total)</p>
+
+    <p>
+      <strong>Outcomes:</strong> Extraordinary layered tropical complexity, 60-70 calculated IBU, aroma maintaining 6-10 weeks. Judges note complexity in 20-point aroma category.
+    </p>
+
+    <h2 id="yeast-management">5. London Ale III Yeast Management and Fermentation</h2>
+
+    <p>
+      London III (Wyeast 1318/White Labs WLP066) is the competition standard for NEIPA-used in over 70% of medal-winning entries-but demands careful diacetyl management that catches unprepared brewers. This strain produces the juice-like mouthfeel and complementary stone fruit esters judges expect, yet rushes through fermentation leaving acetolactate that converts to buttery diacetyl. One premature cold crash permanently ruins your beer. Master this yeast and you unlock competition-level NEIPAs; mismanage it and you'll pour $100+ batches down the drain.
+    </p>
+
+    <p>
+      <strong>Characteristics:</strong> Peachy/apricot esters, 71-75% attenuation, medium-low flocculation, optimal at 68°F.
+    </p>
+
+    <p>
+      <strong>Critical challenge:</strong> Produces significant acetolactate converting to buttery diacetyl. Requires extended rest at elevated temperature for yeast reabsorption. Premature cold crashing permanently flaws the beer.
+    </p>
+
+    <p>
+      <strong>Pitching rate:</strong> 350 billion cells (2 fresh packages or 2.5L starter) for 1.068 wort.
+    </p>
+
+    <p>
+      Proper cell count ensures healthy fermentation, but timing determines success. Follow this proven schedule:
+    </p>
+
+    <p><strong>Fermentation schedule:</strong></p>
+    <ul>
+      <li><strong>Day 0:</strong> Pitch at 66-67°F</li>
+      <li><strong>Days 2-3:</strong> Biotransformation addition during vigorous fermentation</li>
+      <li><strong>Days 3-6:</strong> Peak fermentation, temperature reaches 68-70°F</li>
+      <li><strong>Days 6-7:</strong> At 70-75% attenuation, raise to 70-72°F for diacetyl rest</li>
+      <li><strong>Days 7-10:</strong> Maintain diacetyl rest, monitor gravity stability</li>
+      <li><strong>Day 10-11:</strong> Forced diacetyl test; if passed, cold crash to 34-36°F</li>
+      <li><strong>Days 14-16:</strong> Package with closed transfer</li>
+    </ul>
+
+    <p>
+      <strong>Forced diacetyl test:</strong> Seal sample in jar, place in 140-150°F water bath for 20 minutes converting acetolactate to diacetyl. Cool and taste alongside control. If heated sample tastes butterier, continue rest.
+    </p>
+
+    <p>
+      Achieving this level of control requires specific equipment investments. <strong>Equipment:</strong> Fermentation chamber maintaining ±1°F ($200-400), hydrometer ($20-40).
+    </p>
+
+    <h2 id="packaging">6. Packaging and Oxygen Management for Competition</h2>
+
+    <p>
+      NEIPA oxidizes catastrophically-hop aromatics transform to cardboard within days of oxygen exposure, making packaging the make-or-break moment where perfect brewing can be instantly destroyed. Total oxygen pickup must stay below 50 ppb (parts per billion), a threshold impossible to achieve with traditional siphoning or open transfers. Even trace oxygen exposure ruins months of careful brewing work. You can nail water chemistry, biotransformation, and yeast management, but sloppy packaging guarantees disqualification.
+    </p>
+
+    <p>
+      The solution lies in eliminating air contact entirely. <strong>Closed transfer system</strong> eliminates oxygen by moving beer from fermenter to purged keg through sealed connections under CO₂ pressure.
+    </p>
+
+    <p>
+      <strong>Advanced keg purging:</strong> Fill keg completely with CO₂-purged water. Push water out with CO₂ immediately before transfer. This achieves &lt;10 ppb residual oxygen.
+    </p>
+
+    <p><strong>Transfer execution:</strong></p>
+    <ol>
+      <li>Cold crash to 34-36°F</li>
+      <li>Attach jumper hose between fermenter liquid port and purged keg</li>
+      <li>Connect CO₂ to keg gas post at 2-3 psi</li>
+      <li>Open fermenter relief valve-beer flows under gravity</li>
+      <li>Monitor fill (5.25 gallons for corny keg)</li>
+      <li>Disconnect under CO₂ pressure, pressurize to 12-15 psi</li>
+    </ol>
+
+    <p>
+      <strong>Carbonation:</strong> Target 2.4-2.6 volumes. At 38°F, 12-13 psi achieves 2.5 volumes over 7-10 days. Force carbonate at 30 psi for 24 hours if time-sensitive.
+    </p>
+
+    <p>
+      Building a closed transfer system requires upfront investment, but protects your beer and competition chances. <strong>Equipment costs:</strong> Pressure-rated fermenters $100-200, disconnects/hoses $40-60, CO₂ system $80-120, kegs $60-90. Total: $300-500.
+    </p>
+
+    <h2 id="competition-strategy">7. Competition Strategy and Judging Criteria</h2>
+
+    <p>
+      BJCP judges allocate points across aroma (20), appearance (6), flavor (20), mouthfeel (10), and overall impression (10)-understanding exactly how they evaluate lets you optimize your recipe and presentation for maximum scores. Judges taste 6-12 NEIPAs per flight, making subtle technical flaws more obvious in direct comparison. This section reveals what separates 38-point entries from 45+ gold medals, helping you anticipate feedback and avoid disqualifying faults.
+    </p>
+
+    <p><strong>Critical expectations:</strong></p>
+    <ul>
+      <li><strong>Aroma:</strong> Intense tropical fruit/citrus/stone fruit without grassy notes. Any diacetyl or oxidation = disqualification.</li>
+      <li><strong>Appearance:</strong> Straw to deep gold (3-7 SRM), opaque haze required, dense white foam.</li>
+      <li><strong>Flavor:</strong> Fruit-forward hops, soft malt sweetness, low-moderate bitterness perception (25-35 IBU), soft full finish.</li>
+      <li><strong>Mouthfeel:</strong> Medium-full to full body (creamy/pillowy), 2.4-2.6 volumes carbonation, no astringency.</li>
+    </ul>
+
+    <p><strong>Scoring:</strong> 38-40 places, 41-44 silver, 45-50 gold.</p>
+
+    <p>
+      Understanding what judges penalize helps you avoid common pitfalls that eliminate otherwise strong entries.
+    </p>
+
+    <p><strong>Common faults:</strong></p>
+    <ul>
+      <li>Oxidation (cardboard/papery from poor packaging)</li>
+      <li>Diacetyl (buttery from inadequate yeast management)</li>
+      <li>Astringency (poor water chemistry/high sulfate)</li>
+      <li>Grassy hops (extended contact or poor biotransformation)</li>
+      <li>Phenolic (chlorine in water)</li>
+    </ul>
+
+    <p>
+      <strong>Entry strategy:</strong> Present beer 3-4 weeks post-packaging at peak aroma. Serve at 50-55°F.
+    </p>
+
+    <p>
+      <strong>Entry fees:</strong> $8-15 per entry (AHA-sanctioned), $15-25 (national competitions).
+    </p>
+
+    <h2 id="action-plan">8. Action Plan and Conclusion</h2>
+
+    <p>
+      Implementing everything simultaneously guarantees failure-successful competition brewers build skills systematically, mastering one technique before adding complexity. These tiered roadmaps match your current experience level, preventing overwhelmed beginners from wasting money while challenging advanced brewers appropriately. Follow your path and expect realistic timelines instead of chasing impossible overnight mastery.
+    </p>
+
+    <p>
+      <strong>Beginning brewers:</strong> Invest in temperature control first ($250-350). Use Classic malt bill with single biotransformation addition. Enter 2-3 local competitions. Budget: $400-600 equipment + $150-200 for batches/entries over 3-4 months.
+    </p>
+
+    <p>
+      <strong>Intermediate brewers:</strong> Add water chemistry equipment ($200-300). Implement closed transfers. Progress to double biotransformation staging. Budget: $500-700 over 4-6 months.
+    </p>
+
+    <p>
+      <strong>Advanced brewers:</strong> Focus on process refinement through detailed logging. Enter 8-12 competitions annually analyzing scoresheets. Budget: $1,200-1,800 annually.
+    </p>
+
+    <p><strong>Timeline to proficiency:</strong></p>
+    <ul>
+      <li><strong>Months 1-2:</strong> Master temperature control (3 batches)</li>
+      <li><strong>Months 3-4:</strong> Implement water chemistry, enter first competitions</li>
+      <li><strong>Months 5-6:</strong> Practice closed transfers</li>
+      <li><strong>Months 7-9:</strong> Experiment with biotransformation timing</li>
+      <li><strong>Months 10-12:</strong> Achieve consistency, enter major competitions</li>
+    </ul>
+
+    <p>
+      <strong>First critical purchase:</strong> Temperature control. Without ±1°F control, competition success is impossible. Used chest freezer $100-150 + Inkbird controller $40-50.
+    </p>
+
+    <p>
+      Beyond equipment, certain intangibles separate medal winners from persistent also-rans. <strong>Key success factors:</strong> Patience with learning curve, detailed record keeping, willingness to discard flawed batches, community engagement for feedback.
+    </p>
+
+    <p>
+      Competition NEIPA demands more attention, investment, and ingredient cost than most styles, but creating world-class hazy IPA matching commercial examples justifies the commitment. The journey from first batch to gold medal typically spans 12-18 months of focused practice. Start brewing, entering competitions, and iterating toward excellence.
+    </p>
+
+    <div class="bg-green-50 p-6 rounded-lg mt-12 mb-12">
+      <h3 class="text-xl font-bold mb-3 text-gray-900">Ready to launch your competition brewing platform?</h3>
+      <p class="text-gray-700 mb-4">
+        This premium domain is perfect for building a homebrewing competition resource, BJCP judging guides, or craft beer education platform focused on advanced brewing techniques.
+      </p>
+      <button onclick="trackBuyClick('header'); window.open('https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com', '_blank');" 
+              class="btn-primary text-white font-bold px-6 py-3 rounded-lg">
+        Acquire FermenterPro.com
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Share Buttons -->
+  <div class="border-t border-gray-200 pt-8 mt-12">
+    <h3 class="text-lg font-bold mb-4 text-gray-900">Share this article</h3>
+    <div class="flex gap-4">
+      <button onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(document.title), '_blank')" 
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+        Twitter
+      </button>
+      <button onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank')" 
+              class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition">
+        LinkedIn
+      </button>
+      <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')" 
+              class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+        Facebook
+      </button>
+    </div>
+  </div>
+
+  <!-- Related Articles -->
+  <div class="border-t border-gray-200 pt-12 mt-12">
+    <h3 class="text-2xl font-bold mb-8 text-gray-900">Related Articles</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <a href="best-20-gallon-brewing-systems-for-serious-homebrewers.html" class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+        <span class="text-xs text-orange-600 font-bold uppercase">Advanced Homebrewing</span>
+        <h4 class="text-lg font-bold mt-2 mb-2 text-gray-900">Best 20-Gallon Brewing Systems for Serious Homebrewers</h4>
+        <p class="text-sm text-gray-600">Compare 7 top 20-gallon brewing systems with technical specs, costs, and real-world examples for scaling your homebrew operation.</p>
+      </a>
+      <a href="how-to-age-spirits-in-small-oak-barrels-for-rapid-maturation.html" class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+        <span class="text-xs text-purple-600 font-bold uppercase">Craft Spirits & Distillation</span>
+        <h4 class="text-lg font-bold mt-2 mb-2 text-gray-900">How to Age Spirits in Small Oak Barrels</h4>
+        <p class="text-sm text-gray-600">Master small oak barrel aging for craft spirits with wood selection, toast levels, and timing strategies for premium flavor development.</p>
+      </a>
+    </div>
+  </div>
+
+  </div>
+</article>
+
+<!-- CTA Section -->
+<section class="py-16 px-4 md:px-8 bg-gray-900">
+  <div class="container mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <div class="text-center lg:text-left text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Acquire This Premium Domain
+        </h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Ready to build your brewing platform on a premium domain? Reach out with your offer or any questions.
+        </p>
+        <a href="https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="text-primary font-bold text-lg hover:underline inline-block">
+          Or purchase instantly on Marketplace →
+        </a>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-2xl">
+        <form action="https://formspree.io/f/xovpogdv" method="POST" onsubmit="trackFormSubmit()" class="space-y-6">
+          
+          <div>
+            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+              Full Name
+            </label>
+            <input type="text" 
+                   id="name" 
+                   name="name" 
+                   required
+                   autocomplete="name"
+                   placeholder="John Doe"
+                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+              Email Address
+            </label>
+            <input type="email" 
+                   id="email" 
+                   name="email" 
+                   required
+                   autocomplete="email"
+                   placeholder="you@example.com"
+                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+              Message
+            </label>
+            <textarea id="message" 
+                      name="message" 
+                      rows="4" 
+                      required
+                      placeholder="Your inquiry or offer..."
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+          </div>
+
+          <button type="submit" 
+                  class="w-full btn-primary text-white font-bold py-3 px-6 rounded-lg">
+            Send Message
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-4 md:px-8">
+  <div class="container mx-auto max-w-7xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-primary">FermenterPro.com</h3>
+        <p class="text-gray-400 mb-4">
+          Premium domain for fermentation excellence and craft brewing mastery
+        </p>
+        <a href="https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="trackMarketplaceClick()"
+           class="inline-block bg-primary text-white px-6 py-2 rounded-lg font-bold hover:bg-primary/90 transition-colors">
+          Buy Now
+        </a>
+      </div>
+      
+      <div>
+        <h4 class="font-bold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="../index.html" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="../blog.html" class="hover:text-primary transition-colors">Blog</a></li>
+          <li><a href="../all-use-cases.html" class="hover:text-primary transition-colors">Use Cases</a></li>
+          <li><a href="../disclosure.html" class="hover:text-primary transition-colors">Disclosure</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-bold mb-4">Blog Categories</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="../categories/advanced-homebrewing.html" class="hover:text-primary transition-colors">Advanced Homebrewing</a></li>
+          <li><a href="../categories/commercial-food-fermentation.html" class="hover:text-primary transition-colors">Commercial Food Fermentation</a></li>
+          <li><a href="../categories/alternative-protein-bioreactors.html" class="hover:text-primary transition-colors">Alternative Protein Bioreactors</a></li>
+          <li><a href="../categories/pharmaceutical-fermentation.html" class="hover:text-primary transition-colors">Pharmaceutical Fermentation</a></li>
+          <li><a href="../categories/craft-spirits-distillation.html" class="hover:text-primary transition-colors">Craft Spirits Distillation</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-bold mb-4">Use Cases</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="../use-cases/fermentation-blog-and-educational-media.html" class="hover:text-primary transition-colors">Fermentation Blog</a></li>
+          <li><a href="../use-cases/fermentation-equipment-e-commerce-store.html" class="hover:text-primary transition-colors">Equipment Store</a></li>
+          <li><a href="../use-cases/fermentation-online-learning-platform.html" class="hover:text-primary transition-colors">Online Learning</a></li>
+          <li><a href="../use-cases/fermentation-community-forum-and-marketplace.html" class="hover:text-primary transition-colors">Community Forum</a></li>
+          <li><a href="../use-cases/fermentation-consulting-and-custom-solutions.html" class="hover:text-primary transition-colors">Consulting Services</a></li>
+          <li><a href="../use-cases/fermentation-subscription-box-and-premium-newsletter.html" class="hover:text-primary transition-colors">Subscription Box</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+      <p>&copy; 2025 FermenterPro.com. Premium Domain for Fermentation Excellence</p>
+    </div>
+  </div>
+</footer>
+
+<!-- DOM Event Handlers -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('FermenterPro.com initialized');
+  
+  // Menu dropdown handler
+  const menuBtn = document.getElementById('menuBtn');
+  const mainMenu = document.getElementById('mainMenu');
+  
+  if (menuBtn && mainMenu) {
+    menuBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      mainMenu.classList.toggle('active');
+      console.log('Menu toggled:', mainMenu.classList.contains('active'));
+    });
+  }
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (mainMenu && !e.target.closest('.dropdown')) {
+      mainMenu.classList.remove('active');
+    }
+  });
+  
+  // Prevent menu from closing when clicking inside it
+  if (mainMenu) {
+    mainMenu.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+  
+  // Track form start (first interaction)
+  let formStartTracked = false;
+  const forms = document.querySelectorAll('form');
+  forms.forEach(form => {
+    const inputs = form.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => {
+      input.addEventListener('focus', function() {
+        if (!formStartTracked) {
+          formStartTracked = true;
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'form_start', {
+              'event_category': 'Contact',
+              'event_label': 'Form Started',
+              'value': 1
+            });
+          }
+        }
+      });
+    });
+  });
+});
+</script>
+
+</body>
+</html>

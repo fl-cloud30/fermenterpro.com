@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+<meta charset="UTF-8">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CDMLC8ZVVD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CDMLC8ZVVD');
+</script>
+<!-- Global Tracking Functions -->
+<script>
+function trackBuyClick(location) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click_buy_domain', {
+      'event_category': 'CTA',
+      'event_label': 'Buy Domain - ' + location,
+      'value': 1
+    });
+  }
+}
+
+function trackMarketplaceClick() {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click_marketplace', {
+      'event_category': 'CTA',
+      'event_label': 'Marketplace Link',
+      'value': 1
+    });
+  }
+}
+
+function trackFormSubmit() {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'form_submission', {
+      'event_category': 'Contact',
+      'event_label': 'Contact Form',
+      'value': 5
+    });
+  }
+  return true;
+}
+
+function trackFAQClick(question) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'faq_click', {
+      'event_category': 'FAQ',
+      'event_label': question,
+      'value': 1
+    });
+  }
+}
+</script>
+<!-- End Google Analytics -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal Disclosure & Disclaimer | FermenterPro Domain</title>
+<meta name="description" content="Legal disclosure and disclaimer for FermenterPro.com. All information provided is for educational, informational, and SEO demonstration purposes only here.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- SEO Enhancement -->
+<link rel="canonical" href="https://fermenterpro.com/disclosure.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#17cf54">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Disclosure - FermenterPro.com">
+<meta property="og:description" content="Legal disclosure and disclaimer for FermenterPro.com. Information provided is for educational and SEO purposes only.">
+<meta property="og:url" content="https://fermenterpro.com/disclosure.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FermenterPro.com">
+<meta property="og:image" content="https://fermenterpro.com/hero-images/hero/precision-fermentation-homepage-hero-min.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Disclosure - FermenterPro.com">
+<meta name="twitter:description" content="Legal disclosure and disclaimer for FermenterPro.com. Information provided is for educational and SEO purposes only.">
+<meta name="twitter:image" content="https://fermenterpro.com/hero-images/hero/precision-fermentation-homepage-hero-min.jpg">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#17cf54',
+          secondary: '#0f8c3a',
+          accent: '#22ff66',
+          dark: '#111813'
+        }
+      }
+    }
+  }
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Google Material Symbols -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<style>
+  * {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(23, 207, 84, 0.1);
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #17cf54 0%, #0f8c3a 100%);
+  }
+  
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(23, 207, 84, 0.2);
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #17cf54 0%, #0f8c3a 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(23, 207, 84, 0.3);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    max-height: 70vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #17cf54 #f1f1f1;
+    margin-top: 0.5rem;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .dropdown-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .dropdown-menu::-webkit-scrollbar-thumb {
+    background: #17cf54;
+    border-radius: 10px;
+  }
+  
+  .dropdown-menu::-webkit-scrollbar-thumb:hover {
+    background: #0f8c3a;
+  }
+  
+  .dropdown-menu.active {
+    display: block;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #374151;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-size: 0.875rem;
+  }
+  
+  .dropdown-menu a:hover {
+    background: #f3f4f6;
+    color: #17cf54;
+  }
+</style>
+
+</head>
+<body class="bg-gray-50">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+  <div class="container mx-auto px-4 md:px-8 py-3 md:py-4">
+    <div class="flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-2 md:gap-3">
+        <span class="material-symbols-outlined text-primary text-2xl md:text-3xl">science</span>
+        <h2 class="text-base md:text-xl font-bold text-gray-900">FermenterPro.com</h2>
+      </a>
+      
+      <div class="flex items-center gap-2 md:gap-4">
+        <div class="dropdown">
+          <button id="menuBtn" class="text-gray-700 hover:text-primary font-semibold text-sm md:text-base transition-colors flex items-center gap-1">
+            <span class="material-symbols-outlined text-lg md:text-xl">menu</span>
+            <span class="hidden sm:inline">Menu</span>
+            <span class="material-symbols-outlined text-lg">expand_more</span>
+          </button>
+          <div id="mainMenu" class="dropdown-menu" style="min-width: 220px;">
+            <a href="index.html" style="font-weight: 600;">Home</a>
+            <div style="padding: 8px 20px; font-weight: 600; color: #17cf54; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">Use Cases</div>
+            <a href="all-use-cases.html" style="padding-left: 30px;">All Use Cases</a>
+            <a href="use-cases/fermentation-blog-and-educational-media.html" style="padding-left: 30px;">Fermentation Blog</a>
+            <a href="use-cases/fermentation-equipment-e-commerce-store.html" style="padding-left: 30px;">Equipment Store</a>
+            <a href="use-cases/fermentation-online-learning-platform.html" style="padding-left: 30px;">Online Learning Platform</a>
+            <a href="use-cases/fermentation-community-forum-and-marketplace.html" style="padding-left: 30px;">Community Forum</a>
+            <a href="use-cases/fermentation-subscription-box-and-premium-newsletter.html" style="padding-left: 30px;">Subscription Box</a>
+            <a href="use-cases/fermentation-consulting-and-custom-solutions.html" style="padding-left: 30px;">Consulting Services</a>
+            <div style="padding: 8px 20px; font-weight: 600; color: #17cf54; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 8px;">Blog</div>
+            <a href="all-articles.html" style="padding-left: 30px;">All Articles</a>
+            <a href="categories/advanced-homebrewing.html" style="padding-left: 30px;">Advanced Homebrewing</a>
+            <a href="categories/alternative-protein-bioreactors.html" style="padding-left: 30px;">Alternative Protein Bioreactors</a>
+            <a href="categories/commercial-food-fermentation.html" style="padding-left: 30px;">Commercial Food Fermentation</a>
+            <a href="categories/craft-spirits-distillation.html" style="padding-left: 30px;">Craft Spirits Distillation</a>
+            <a href="categories/pharmaceutical-fermentation.html" style="padding-left: 30px;">Pharmaceutical Fermentation</a>
+          </div>
+        </div>
+        <button onclick="trackBuyClick('header'); window.open('https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com', '_blank');" 
+                class="btn-primary text-white font-bold px-3 py-2 md:px-6 md:py-2.5 rounded-lg text-xs md:text-sm">
+          Buy Domain
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="py-20 px-4 md:px-8 bg-gradient-to-br from-green-50 to-white">
+  <div class="container mx-auto max-w-4xl text-center">
+    <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm mb-6">
+      <span class="material-symbols-outlined text-primary">gavel</span>
+      <span class="text-sm font-semibold text-gray-700">Legal Information</span>
+    </div>
+    <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+      Disclosure & Disclaimer
+    </h1>
+    <p class="text-xl text-gray-600 mb-8">
+      Important information about the content and purpose of this website
+    </p>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-16 px-4 md:px-8">
+  <div class="container mx-auto max-w-4xl">
+    <div class="glass-card rounded-2xl p-8 md:p-12 shadow-lg space-y-8">
+      
+      <!-- Section 1: Website Purpose -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">info</span>
+          <h2 class="text-2xl font-bold text-gray-900">Website Purpose</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            FermenterPro.com is an informational resource platform dedicated to the fermentation, brewing, and biotechnology industries. This website provides educational content, industry insights, and practical guidance for professionals and enthusiasts.
+          </p>
+          <p>
+            The content provided on this website, including blog articles, use cases, technical guides, and other informational materials, is created for <strong>educational, informational, and industry knowledge-sharing purposes</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Section 2: No Active Business -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">store</span>
+          <h2 class="text-2xl font-bold text-gray-900">Platform Scope & Focus</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            <strong>Important:</strong> FermenterPro.com is an informational platform. Our primary focus is content creation and knowledge sharing. We do not:
+          </p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Manufacture, sell, or distribute physical fermentation equipment directly</li>
+            <li>Provide paid consulting services or professional certifications</li>
+            <li>Operate transactional e-commerce or marketplace platforms</li>
+            <li>Offer regulated professional advice on brewing, fermentation, or biotechnology</li>
+          </ul>
+          <p>
+            Product descriptions, service examples, and business models presented are for educational reference and industry exploration purposes, helping readers understand various approaches in the fermentation industry.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Section 3: Information Accuracy -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">fact_check</span>
+          <h2 class="text-2xl font-bold text-gray-900">Information Accuracy & Liability</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            While we strive to provide accurate and useful information, the content on this website is provided <strong>"as is"</strong> without any warranties, express or implied.
+          </p>
+          <p>
+            <strong>We are not responsible for:</strong>
+          </p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Any errors, omissions, or inaccuracies in the content</li>
+            <li>Any decisions made based on information found on this website</li>
+            <li>Any damages, losses, or injuries resulting from the use of this information</li>
+            <li>The accuracy of technical specifications, equipment recommendations, or process descriptions</li>
+            <li>Compliance with local, state, or federal regulations related to fermentation or brewing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Section 4: Professional Advice -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
+          <h2 class="text-2xl font-bold text-gray-900">Not Professional Advice</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            The information on this website does not constitute professional advice and should not be relied upon as such. This includes but is not limited to:
+          </p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li><strong>Technical advice:</strong> Fermentation processes, equipment specifications, or production methods</li>
+            <li><strong>Safety advice:</strong> Food safety, equipment safety, or workplace safety</li>
+            <li><strong>Legal advice:</strong> Licensing, permits, or regulatory compliance</li>
+            <li><strong>Business advice:</strong> Investment decisions, business strategies, or financial planning</li>
+            <li><strong>Health advice:</strong> Consumption, dietary considerations, or health benefits of fermented products</li>
+          </ul>
+          <p>
+            Always consult with qualified professionals in the relevant fields before making decisions related to fermentation, brewing, biotechnology, or business operations.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Section 5: External Links -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">link</span>
+          <h2 class="text-2xl font-bold text-gray-900">External Links & Third Parties</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            This website may contain links to external websites and third-party resources. We have no control over the content, accuracy, or availability of these external sites.
+          </p>
+          <p>
+            We do not endorse, warrant, or assume responsibility for any third-party websites, products, services, or content. Your use of external links is at your own risk.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Section 6: Regulatory Compliance -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">policy</span>
+          <h2 class="text-2xl font-bold text-gray-900">Regulatory Compliance</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            Fermentation, brewing, and biotechnology operations are subject to numerous federal, state, and local regulations. These may include but are not limited to:
+          </p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>FDA (Food and Drug Administration) food safety regulations</li>
+            <li>TTB (Alcohol and Tobacco Tax and Trade Bureau) alcohol production licenses</li>
+            <li>USDA (United States Department of Agriculture) guidelines</li>
+            <li>State and local health department permits</li>
+            <li>Environmental protection regulations</li>
+            <li>Occupational safety and health standards</li>
+          </ul>
+          <p>
+            It is <strong>your sole responsibility</strong> to understand and comply with all applicable laws and regulations in your jurisdiction. We provide no guidance on regulatory compliance and assume no liability for any regulatory violations.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Section 7: Domain Purchase -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">shopping_cart</span>
+          <h2 class="text-2xl font-bold text-gray-900">Domain Purchase Information</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            FermenterPro.com is available for purchase through domain marketplaces. The domain sale is handled by third-party platforms, and all transactions are subject to their terms and conditions.
+          </p>
+          <p>
+            The purchase of this domain does not include any of the content, designs, or materials displayed on this demonstration website unless explicitly agreed upon in writing.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Section 8: Content Updates -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">update</span>
+          <h2 class="text-2xl font-bold text-gray-900">Content Updates & Changes</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            We reserve the right to modify, update, or remove any content on this website at any time without notice. We are not obligated to maintain, update, or ensure the accuracy of any information provided.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Section 9: Limitation of Liability -->
+      <div class="bg-yellow-50 rounded-xl p-6 border-2 border-yellow-200">
+        <div class="flex items-start gap-3 mb-3">
+          <span class="material-symbols-outlined text-yellow-600 text-3xl">warning</span>
+          <h2 class="text-2xl font-bold text-gray-900">Limitation of Liability</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p class="font-semibold">
+            TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL LIABILITY FOR ANY DAMAGES, LOSSES, OR INJURIES ARISING FROM:
+          </p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Use of or inability to use this website or its content</li>
+            <li>Reliance on any information provided on this website</li>
+            <li>Implementation of any methods, processes, or recommendations described</li>
+            <li>Purchase or use of any products or equipment mentioned</li>
+            <li>Business decisions or investments made based on this content</li>
+            <li>Any errors, omissions, or inaccuracies in the content</li>
+          </ul>
+          <p class="font-semibold text-gray-900">
+            BY USING THIS WEBSITE, YOU AGREE TO ASSUME ALL RISKS ASSOCIATED WITH YOUR USE OF THE INFORMATION PROVIDED.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-200"></div>
+
+      <!-- Contact Information -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary text-3xl">contact_mail</span>
+          <h2 class="text-2xl font-bold text-gray-900">Questions or Concerns</h2>
+        </div>
+        <div class="pl-12 space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            If you have questions about this disclosure, the content on this website, or the domain purchase process, please use the contact information provided on the homepage.
+          </p>
+          <p class="text-sm text-gray-500 italic">
+            Last updated: November 30, 2025
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="sale" class="bg-gray-900 py-20 px-4 md:px-8">
+  <div class="container mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left Side -->
+      <div class="text-center lg:text-left text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Acquire This Premium Domain
+        </h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Ready to build your fermentation brand, craft brewery, or kombucha business on a premium domain? Reach out with your offer or any questions. We're open to serious inquiries from entrepreneurs and business builders.
+        </p>
+        <a href="https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="trackMarketplaceClick()"
+           class="text-accent font-bold text-lg hover:underline inline-block">
+          Or purchase instantly on Marketplace →
+        </a>
+      </div>
+      <!-- Contact Form -->
+      <div class="bg-white rounded-2xl p-8 shadow-2xl">
+        <form action="https://formspree.io/f/xovpogdv" method="POST" onsubmit="trackFormSubmit()" class="space-y-6" onsubmit="trackFormSubmit()">
+          <div>
+            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+              Full Name
+            </label>
+            <input type="text" 
+                   id="name" 
+                   name="name" 
+                   required
+                   autocomplete="name"
+                   placeholder="John Doe"
+                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+              Email Address
+            </label>
+            <input type="email" 
+                   id="email" 
+                   name="email" 
+                   required
+                   autocomplete="email"
+                   placeholder="you@example.com"
+                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+              Message
+            </label>
+            <textarea id="message" 
+                      name="message" 
+                      rows="4" 
+                      required
+                      placeholder="Your inquiry or offer..."
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+          </div>
+          <button type="submit" 
+                  class="w-full btn-primary text-white font-bold py-3 px-6 rounded-lg">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-4 md:px-8">
+  <div class="container mx-auto max-w-7xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-primary">FermenterPro.com</h3>
+        <p class="text-gray-400 mb-4">
+          Premium domain for fermentation excellence and craft brewing mastery
+        </p>
+        <a href="https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           onclick="trackMarketplaceClick()"
+           class="inline-block bg-primary text-white px-6 py-2 rounded-lg font-bold hover:bg-primary/90 transition-colors">
+          Buy Now
+        </a>
+      </div>
+      
+      <div>
+        <h4 class="font-bold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="blog.html" class="hover:text-primary transition-colors">Blog</a></li>
+          <li><a href="all-use-cases.html" class="hover:text-primary transition-colors">Use Cases</a></li>
+          <li><a href="disclosure.html" class="hover:text-primary transition-colors">Disclosure</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-bold mb-4">Blog Categories</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="categories/advanced-homebrewing.html" class="hover:text-primary transition-colors">Advanced Homebrewing</a></li>
+          <li><a href="categories/commercial-food-fermentation.html" class="hover:text-primary transition-colors">Commercial Food Fermentation</a></li>
+          <li><a href="categories/alternative-protein-bioreactors.html" class="hover:text-primary transition-colors">Alternative Protein Bioreactors</a></li>
+          <li><a href="categories/pharmaceutical-fermentation.html" class="hover:text-primary transition-colors">Pharmaceutical Fermentation</a></li>
+          <li><a href="categories/craft-spirits-distillation.html" class="hover:text-primary transition-colors">Craft Spirits Distillation</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-bold mb-4">Use Cases</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="use-cases/fermentation-blog-and-educational-media.html" class="hover:text-primary transition-colors">Fermentation Blog</a></li>
+          <li><a href="use-cases/fermentation-equipment-e-commerce-store.html" class="hover:text-primary transition-colors">Equipment Store</a></li>
+          <li><a href="use-cases/fermentation-online-learning-platform.html" class="hover:text-primary transition-colors">Online Learning</a></li>
+          <li><a href="use-cases/fermentation-community-forum-and-marketplace.html" class="hover:text-primary transition-colors">Community Forum</a></li>
+          <li><a href="use-cases/fermentation-consulting-and-custom-solutions.html" class="hover:text-primary transition-colors">Consulting Services</a></li>
+          <li><a href="use-cases/fermentation-subscription-box-and-premium-newsletter.html" class="hover:text-primary transition-colors">Subscription Box</a></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+      <p>&copy; 2025 FermenterPro.com. Premium Domain for Fermentation Excellence</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Dropdown menu functionality -->
+<!-- Copied from homepage for correct behavior -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.getElementById('menuBtn');
+  const mainMenu = document.getElementById('mainMenu');
+  if (menuBtn && mainMenu) {
+    menuBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      mainMenu.classList.toggle('active');
+    });
+  }
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      if (mainMenu) mainMenu.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mainMenu.classList.contains('active')) {
+      mainMenu.classList.remove('active');
+    }
+  });
+});
+
+// Track Buy Button Clicks
+function trackBuyClick(location) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click', {
+      'event_category': 'Buy Domain',
+      'event_label': 'Buy Domain - ' + location,
+      'value': 1
+    });
+  }
+}
+
+// Track Marketplace Link
+function trackMarketplaceClick() {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'click_marketplace', {
+      'event_category': 'CTA',
+      'event_label': 'Marketplace Link',
+      'value': 1
+    });
+  }
+}
+
+// Track Form Submit
+function trackFormSubmit() {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'form_submission', {
+      'event_category': 'Contact',
+      'event_label': 'Contact Form',
+      'value': 5
+    }
+    // Track form start (first interaction)
+    let formStartTracked = false;
+    document.addEventListener('DOMContentLoaded', function() {
+      const forms = document.querySelectorAll('form');
+      forms.forEach(form => {
+        const inputs = form.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+          input.addEventListener('focus', function() {
+            if (!formStartTracked) {
+              formStartTracked = true;
+              gtag('event', 'form_start', {
+                'event_category': 'Contact',
+                'event_label': 'Form Started',
+                'value': 1
+              });
+            }
+          }, { once: false });
+        });
+      });
+    });`n}
+}
+</script>
+
+<!-- DOM Event Handlers -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.getElementById('menuBtn');
+  const mainMenu = document.getElementById('mainMenu');
+  if (menuBtn && mainMenu) {
+    menuBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      mainMenu.classList.toggle('active');
+    });
+  }
+  document.addEventListener('click', function(e) {
+    if (mainMenu && !e.target.closest('.dropdown')) {
+      mainMenu.classList.remove('active');
+    }
+  });
+  if (mainMenu) {
+    mainMenu.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+  let formStartTracked = false;
+  const forms = document.querySelectorAll('form');
+  forms.forEach(form => {
+    const inputs = form.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => {
+      input.addEventListener('focus', function() {
+        if (!formStartTracked) {
+          formStartTracked = true;
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'form_start', {
+              'event_category': 'Contact',
+              'event_label': 'Form Started',
+              'value': 1
+            });
+          }
+        }
+      });
+    });
+  });
+});
+</script>
+</body>
+</html>

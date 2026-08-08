@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDMLC8ZVVD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CDMLC8ZVVD');
+  </script>
+  <!-- Global Tracking Functions -->
+  <script>
+    function trackBuyClick(location) {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'click_buy_domain', {
+          'event_category': 'CTA',
+          'event_label': 'Buy Domain - ' + location,
+          'value': 1
+        });
+      }
+    }
+
+    function trackMarketplaceClick() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'click_marketplace', {
+          'event_category': 'CTA',
+          'event_label': 'Marketplace Link',
+          'value': 1
+        });
+      }
+    }
+
+    function trackFormSubmit() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'form_submission', {
+          'event_category': 'Contact',
+          'event_label': 'Contact Form',
+          'value': 5
+        });
+      }
+      return true;
+    }
+
+    function trackFAQClick(question) {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'faq_click', {
+          'event_category': 'FAQ',
+          'event_label': question,
+          'value': 1
+        });
+      }
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilot-Scale Antibiotic Fermenters for Pharma</title>
+  <meta name="description"
+    content="Pilot-scale antibiotic fermentation for penicillin and streptomycin. Fed-batch strategies, sterile sampling, analytical methods & equipment selection.">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="canonical"
+    href="https://fermenterpro.com/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.html">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords"
+    content="pilot-scale antibiotic fermentation, penicillin production, streptomycin fermentation, pharmaceutical fermenters, fed-batch fermentation, GMP fermentation, bioreactor systems, bioprocess engineering">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Antibiotic Production Fermenters for Pilot-Scale Small Pharma">
+  <meta property="og:description"
+    content="Comprehensive guide to scaling antibiotic fermentation from lab to pilot-scale. Master fed-batch strategies, equipment selection, and GMP compliance for penicillin and streptomycin production.">
+  <meta property="og:url"
+    content="https://fermenterpro.com/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="FermenterPro.com">
+  <meta property="og:image"
+    content="https://fermenterpro.com/images/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Antibiotic Production Fermenters for Pilot-Scale Small Pharma">
+  <meta name="twitter:description"
+    content="Complete pharmaceutical fermentation guide covering fed-batch strategies, equipment selection, sterile sampling, and GMP compliance for pilot-scale antibiotic production.">
+  <meta name="twitter:image"
+    content="https://fermenterpro.com/images/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Antibiotic Production Fermenters for Pilot-Scale Small Pharma",
+  "description": "Master pilot-scale antibiotic fermentation for penicillin and streptomycin production with fed-batch strategies, sterile sampling, and analytical methods for small pharma.",
+  "datePublished": "2025-11-29",
+  "author": {
+    "@type": "Person",
+    "name": "Fermenter Pro"
+  },
+  "image": "https://fermenterpro.com/images/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "FermenterPro.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fermenterpro.com/logo.png"
+    }
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://fermenterpro.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fermenterpro.com/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "Pharmaceutical Fermentation", "item": "https://fermenterpro.com/categories/pharmaceutical-fermentation.html"},
+      {"@type": "ListItem", "position": 4, "name": "Antibiotic Production Fermenters", "item": "https://fermenterpro.com/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.html"}
+    ]
+  }
+}
+</script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#17cf54',
+            secondary: '#0f8c3a',
+            accent: '#22ff66',
+            dark: '#111813',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111813;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(23, 207, 84, 0.1);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #17cf54 0%, #0f8c3a 100%);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #17cf54 0%, #0f8c3a 100%);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(23, 207, 84, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(23, 207, 84, 0.6);
+    }
+
+    .material-symbols-outlined {
+      font-size: 24px;
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      min-width: 200px;
+      max-height: 70vh;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #17cf54 #f1f1f1;
+      margin-top: 0.5rem;
+      z-index: 1000;
+    }
+
+    .dropdown-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-thumb {
+      background: #17cf54;
+      border-radius: 10px;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-thumb:hover {
+      background: #0f8c3a;
+    }
+
+    .dropdown-menu.active {
+      display: block;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 0.75rem 1rem;
+      color: #374151;
+      text-decoration: none;
+      transition: all 0.2s;
+      font-size: 0.875rem;
+    }
+
+    .dropdown-menu a:hover {
+      background: #f3f4f6;
+      color: #17cf54;
+    }
+
+    .article-content {
+      line-height: 1.7;
+    }
+
+    .article-content h2 {
+      font-size: 1.875rem;
+      font-weight: 800;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #111;
+      scroll-margin-top: 100px;
+    }
+
+    .article-content h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: #111;
+    }
+
+    .article-content h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #111;
+    }
+
+    .article-content p {
+      margin-bottom: 1.25rem;
+      color: #374151;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .article-content ul {
+      list-style-type: disc;
+    }
+
+    .article-content ol {
+      list-style-type: decimal;
+    }
+
+    .article-content li {
+      margin-bottom: 0.5rem;
+      color: #374151;
+    }
+
+    .article-content strong {
+      color: #111;
+      font-weight: 700;
+    }
+
+    .article-content blockquote {
+      border-left: 4px solid #17cf54;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #6B7280;
+    }
+
+    .article-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 0.875rem;
+    }
+
+    .article-content th {
+      background: #f3f4f6;
+      padding: 0.75rem;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 2px solid #17cf54;
+    }
+
+    .article-content td {
+      padding: 0.75rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .article-content blockquote {
+      border-left: 4px solid #17cf54;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+    <div class="container mx-auto px-4 md:px-8 py-3 md:py-4">
+      <div class="flex items-center justify-between gap-4">
+        <a href="../index.html" class="flex items-center gap-2 md:gap-3">
+          <span class="material-symbols-outlined text-primary text-2xl md:text-3xl">science</span>
+          <h2 class="text-base md:text-xl font-bold text-gray-900">FermenterPro.com</h2>
+        </a>
+
+        <div class="flex items-center gap-2 md:gap-4">
+          <div class="dropdown">
+            <button id="menuBtn"
+              class="text-gray-700 hover:text-primary font-semibold text-sm md:text-base transition-colors flex items-center gap-1">
+              <span class="material-symbols-outlined text-lg md:text-xl">menu</span>
+              <span class="hidden sm:inline">Menu</span>
+              <span class="material-symbols-outlined text-lg">expand_more</span>
+            </button>
+            <div id="mainMenu" class="dropdown-menu" style="min-width: 220px;">
+              <a href="../index.html" style="font-weight: 600;">Home</a>
+              <div
+                style="padding: 8px 20px; font-weight: 600; color: #17cf54; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;">
+                Use Cases</div>
+              <a href="../all-use-cases.html" style="padding-left: 30px;">All Use Cases</a>
+              <a href="../use-cases/fermentation-blog-and-educational-media.html"
+                style="padding-left: 30px;">Fermentation Blog</a>
+              <a href="../use-cases/fermentation-equipment-e-commerce-store.html" style="padding-left: 30px;">Equipment
+                Store</a>
+              <a href="../use-cases/fermentation-online-learning-platform.html" style="padding-left: 30px;">Online
+                Learning Platform</a>
+              <a href="../use-cases/fermentation-community-forum-and-marketplace.html"
+                style="padding-left: 30px;">Community Forum</a>
+              <a href="../use-cases/fermentation-subscription-box-and-premium-newsletter.html"
+                style="padding-left: 30px;">Subscription Box</a>
+              <a href="../use-cases/fermentation-consulting-and-custom-solutions.html"
+                style="padding-left: 30px;">Consulting Services</a>
+              <div
+                style="padding: 8px 20px; font-weight: 600; color: #17cf54; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 8px;">
+                Blog</div>
+              <a href="../all-articles.html" style="padding-left: 30px;">All Articles</a>
+              <a href="../categories/pharmaceutical-fermentation.html" style="padding-left: 30px;">Advanced
+                Homebrewing</a>
+              <a href="../categories/alternative-protein-bioreactors.html" style="padding-left: 30px;">Alternative
+                Protein Bioreactors</a>
+              <a href="../categories/commercial-food-fermentation.html" style="padding-left: 30px;">Commercial Food
+                Fermentation</a>
+              <a href="../categories/craft-spirits-distillation.html" style="padding-left: 30px;">Craft Spirits
+                Distillation</a>
+              <a href="../categories/pharmaceutical-fermentation.html" style="padding-left: 30px;">Pharmaceutical
+                Fermentation</a>
+            </div>
+          </div>
+          <button
+            onclick="trackBuyClick('header'); window.open('https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com', '_blank');"
+            class="btn-primary text-white font-bold px-3 py-2 md:px-6 md:py-2.5 rounded-lg text-xs md:text-sm">
+            Buy Domain
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="bg-gradient-to-r from-gray-50 to-green-50 py-5 px-4 md:px-8 border-b border-gray-200">
+    <div class="container mx-auto max-w-4xl">
+      <div class="flex items-center flex-wrap gap-2 text-sm">
+        <a href="../index.html"
+          class="flex items-center gap-1 px-3 py-1.5 rounded-md text-gray-600 hover:text-white hover:bg-primary transition-all duration-200 font-medium">
+          <span class="material-symbols-outlined" style="font-size: 18px;">home</span>
+          <span>Home</span>
+        </a>
+        <span class="text-gray-400">/</span>
+        <a href="../blog.html"
+          class="flex items-center gap-1 px-3 py-1.5 rounded-md text-gray-600 hover:text-white hover:bg-primary transition-all duration-200 font-medium">
+          <span class="material-symbols-outlined" style="font-size: 18px;">article</span>
+          <span>Blog</span>
+        </a>
+        <span class="text-gray-400">/</span>
+        <a href="../categories/pharmaceutical-fermentation.html"
+          class="flex items-center gap-1 px-3 py-1.5 rounded-md text-gray-600 hover:text-white hover:bg-primary transition-all duration-200 font-medium">
+          <span class="material-symbols-outlined" style="font-size: 18px;">science</span>
+          <span>Pharmaceutical Fermentation</span>
+        </a>
+        <span class="text-gray-400">/</span>
+        <span class="flex items-center gap-1 px-3 py-1.5 rounded-md bg-primary/10 text-primary font-semibold">
+          <span>How to Ferment Antibiotics at Pilot Scale</span>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <article class="py-12 px-4 md:px-8">
+    <div class="container mx-auto max-w-4xl">
+
+      <header class="mb-12">
+        <span class="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-bold uppercase mb-4">
+          Pharmaceutical Fermentation
+        </span>
+        <h1 class="text-4xl md:text-5xl font-black mb-6 text-gray-900 leading-tight">
+          Antibiotic Production Fermenters for Pilot-Scale Small Pharma
+        </h1>
+        <div class="flex items-center gap-6 text-gray-600 text-sm mb-8">
+          <time datetime="2025-11-29">November 29, 2025</time>
+          <span>•</span>
+          <span>25 min read</span>
+        </div>
+        <img src="../images/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.jpg"
+          alt="Pilot-scale pharmaceutical fermentation equipment for antibiotic production in small pharma facilities"
+          class="w-full aspect-video object-contain bg-gray-50 rounded-2xl shadow-lg mb-8">
+      </header>
+
+      <!-- Article Content -->
+      <div class="article-content prose prose-lg max-w-none">
+
+        <p class="text-xl text-gray-700 font-medium mb-8 leading-relaxed">
+          Transitioning antibiotic production from laboratory flasks to pilot-scale fermenters represents one of the
+          most critical phases in pharmaceutical development. For small pharma companies, contract manufacturers, and
+          biotech startups, mastering pilot-scale fermentation can mean the difference between a viable product and a
+          failed scale-up. This guide focuses on producing penicillin and streptomycin using fed-batch fermentation
+          strategies, sterile sampling protocols, and analytical methods that ensure consistent, high-titer production.
+        </p>
+
+        <!-- Table of Contents -->
+        <div class="bg-green-50 p-6 rounded-lg my-8">
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Table of Contents</h3>
+          <p class="text-gray-700 mb-4 text-sm">
+            Navigate directly to the section you need. Click any link below to jump to detailed information about
+            pilot-scale antibiotic fermentation, equipment selection, and process optimization.
+          </p>
+          <nav class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+            <a href="#understanding-pilot-scale-antibiotic-fermentation-systems"
+              class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+              1. Understanding Pilot-Scale Systems
+            </a>
+            <a href="#selecting-the-right-antibiotic-production-fermenters-for-small-pharma"
+              class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+              2. Selecting Equipment
+            </a>
+            <a href="#fed-batch-fermentation-strategy-for-penicillin-production"
+              class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+              3. Penicillin Production Strategy
+            </a>
+            <a href="#streptomycin-fermentation-protocol-at-pilot-scale"
+              class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+              4. Streptomycin Protocol
+            </a>
+            <a href="#sterile-sampling-techniques-for-antibiotic-fermentation"
+              class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+              5. Sterile Sampling
+            </a>
+            <a href="#critical-process-parameters-and-control"
+              class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+              6. Critical Parameters
+            </a>
+            <a href="#analytics-for-monitoring-antibiotic-production"
+              class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+              7. Analytics
+            </a>
+            <a href="#scaling-considerations-and-common-pitfalls"
+              class="text-gray-900 hover:text-primary transition-colors text-sm font-medium hover:underline">
+              8. Scaling Considerations
+            </a>
+          </nav>
+        </div>
+
+        <h2 id="understanding-pilot-scale-antibiotic-fermentation-systems">1. Understanding Pilot-Scale Antibiotic
+          Fermentation Systems</h2>
+        <p>Pilot-scale fermentation typically involves vessels ranging from 50 liters to 500 liters, with the 100-300L
+          range representing the sweet spot for most small pharma operations. These systems bridge the gap between
+          benchtop research (1-20L) and full commercial production (5,000L+), allowing you to validate bioprocesses,
+          optimize economics, and generate material for clinical trials.</p>
+        <p>Unlike laboratory fermenters, pilot-scale systems require robust sterilization-in-place (SIP) capabilities,
+          sophisticated control systems, and the ability to maintain aseptic conditions for extended periods. Your
+          fermenter should be constructed from 316L stainless steel with electropolished interiors (Ra <0.8 μm) to
+            minimize contamination risks and facilitate cleaning validation.</p>
+            <p>Modern pilot-scale antibiotic production fermenters for small pharma must include automated control of
+              dissolved oxygen (DO), pH, temperature, agitation, and substrate feeding. These parameters directly impact
+              antibiotic titer, and manual control becomes impractical during multi-day fermentation runs. Expect to
+              invest $80,000-$250,000 for a fully equipped 200L system with appropriate monitoring and control
+              infrastructure.</p>
+            <p>Critical features include multiple sampling ports, optical density probes, dedicated feed lines with
+              peristaltic or diaphragm pumps, and redundant sensors for key parameters. The control system should log
+              data at minimum 1-minute intervals to enable process characterization for regulatory submissions.</p>
+            <h2 id="selecting-the-right-antibiotic-production-fermenters-for-small-pharma">2. Selecting the Right
+              Antibiotic Production Fermenters for Small Pharma</h2>
+            <p>When evaluating fermentation systems for antibiotic production, prioritize vessels that can withstand
+              repeated steam sterilization cycles at 121°C (250°F) for 30-60 minutes. SIP capability is non-negotiable
+              for pharmaceutical applications, as it eliminates the contamination risks associated with transferring
+              media into the vessel.</p>
+            <p>Your fermenter should feature a minimum aspect ratio (height to diameter) of 2:1 to 3:1, which improves
+              oxygen transfer efficiency-critical for aerobic antibiotic producers like <em>Penicillium chrysogenum</em>
+              and <em>Streptomyces griseus</em>. The agitation system typically employs Rushton turbine impellers or
+              marine-style impellers, with power input capabilities of 2-5 watts per liter.</p>
+            <p>Port configuration matters significantly. You'll need dedicated ports for:</p>
+            <ul>
+              <li>Sterile sampling (with 0.2 μm hydrophobic filters)</li>
+              <li>Inoculation (with steam-sterilizable connections)</li>
+              <li>Substrate feeding (minimum two independent feed lines)</li>
+              <li>Antifoam addition</li>
+              <li>Acid/base addition for pH control</li>
+              <li>Exhaust gas analysis (O₂ and CO₂ sensors)</li>
+              <li>Harvest line with aseptic valve assembly</li>
+            </ul>
+            <p>Temperature control should maintain ±0.5°C stability, typically achieved through jacketed vessels
+              connected to heating/cooling systems with proportional-integral-derivative (PID) controllers. For
+              antibiotic fermentation, heat removal becomes the limiting factor as microbial metabolism generates
+              substantial heat-ensure your system can remove 150-250 watts per liter.</p>
+            <p>Budget for analytical integration. Modern systems should support real-time data acquisition, with the
+              ability to correlate process parameters with offline analytical results from HPLC, spectrophotometry, or
+              bioassays.</p>
+            <h2 id="fed-batch-fermentation-strategy-for-penicillin-production">3. Fed-Batch Fermentation Strategy for
+              Penicillin Production</h2>
+            <p>Fed-batch operation remains the industrial standard for penicillin production because it addresses
+              <em>Penicillium chrysogenum</em>'s sensitivity to substrate (glucose or lactose) concentration while
+              maximizing volumetric productivity. Unlike simple batch fermentation, fed-batch allows you to control
+              substrate availability, preventing both carbon catabolite repression and substrate depletion.
+            </p>
+            <p>The fermentation proceeds through three distinct phases:</p>
+            <p><strong>Growth Phase (24-48 hours):</strong> Initial batch phase with 20-30 g/L glucose or lactose.
+              Temperature maintained at 25°C, pH controlled at 6.5 using ammonia solution (which also serves as nitrogen
+              source), and dissolved oxygen held above 30% saturation through cascade control of agitation (150-300 rpm)
+              and aeration (0.5-1.0 vvm). Biomass doubles every 6-8 hours during this phase.</p>
+            <p><strong>Transition Phase (48-72 hours):</strong> As glucose depletes to 5-10 g/L, initiate exponential
+              feeding to maintain substrate concentration at 10-15 g/L. This concentration prevents overflow metabolism
+              while ensuring sufficient carbon for both growth and penicillin biosynthesis. The precursor phenylacetic
+              acid or phenoxyacetic acid is added continuously at 0.1-0.2 g/L/hour starting at 48 hours.</p>
+            <p><strong>Production Phase (72-180 hours):</strong> Linear feeding replaces exponential feeding, with rates
+              adjusted based on oxygen uptake rate (OUR) measurements. Maintain glucose at 10-15 g/L, DO at 20-40%, pH
+              at 6.8-7.0, and temperature at 25°C. Modern high-yielding strains produce 70-90 g/L penicillin G over this
+              5-7 day fermentation.</p>
+            <p>Feed composition typically contains 500-600 g/L glucose or lactose, along with balanced concentrations of
+              nitrogen, phosphorus, sulfur, and trace elements. Calculate feed rates using the formula:</p>
+            <p><strong>F = (μ × X × V) / (Sf × Y)</strong></p>
+            <p>Where F = feed rate (L/h), μ = specific growth rate (h⁻¹), X = biomass concentration (g/L), V = culture
+              volume (L), Sf = substrate concentration in feed (g/L), and Y = yield coefficient (g biomass/g substrate).
+            </p>
+            <p>Monitor viscosity throughout the fermentation. <em>P. chrysogenum</em> forms pellets or filamentous
+              morphology depending on strain and conditions, with apparent viscosity reaching 200-500 cP during peak
+              production. This affects oxygen transfer and may require agitation adjustments.</p>
+            <h2 id="section-4">4. Streptomycin Fermentation Protocol at Pilot Scale
+            </h2>
+            <p><em>Streptomyces griseus</em> fermentation for streptomycin production follows different kinetics than
+              penicillin, requiring longer fermentation times (7-10 days) and distinct medium composition.
+              Streptomycetes are obligate aerobes with high oxygen demands, making oxygen transfer the critical
+              engineering challenge at pilot scale.</p>
+            <p><strong>Medium Composition:</strong> Use Hockenhull medium or modifications containing glucose (10-15
+              g/L), soybean meal (15-25 g/L), sodium chloride (5 g/L), calcium carbonate (3-5 g/L), and trace elements.
+              The soybean meal provides complex nitrogen, which streptomycetes utilize more efficiently than simple
+              nitrogen sources.</p>
+            <p><strong>Fermentation Phases:</strong></p>
+            <p><strong>Phase 1 - Growth (0-48 hours):</strong> Rapid biomass accumulation with glucose as primary carbon
+              source. Temperature: 28°C, pH: 7.0-7.2 (calcium carbonate buffers naturally), DO: >40% saturation,
+              agitation: 200-300 rpm, aeration: 0.8-1.2 vvm. The mycelium develops characteristic branching morphology.
+            </p>
+            <p><strong>Phase 2 - Transition (48-96 hours):</strong> As primary metabolism slows, secondary metabolism
+              initiates. Glucose concentration drops to <5 g/L, triggering streptomycin biosynthesis pathway activation.
+                Begin fed-batch glucose addition to maintain 5-8 g/L. Streptomycin appears in broth at low titers
+                (100-300 units/mL).</p>
+                <p><strong>Phase 3 - Production (96-240 hours):</strong> Streptomycin accumulates linearly if oxygen
+                  supply remains adequate. Maintain DO >30%, pH 7.2-7.5 (adjust with NaOH or H₂SO₄), temperature
+                  27-28°C. Modern industrial strains yield 2,500-4,000 units/mL (approximately 2-3 g/L).</p>
+                <p>Oxygen transfer coefficient (kLa) must exceed 150-200 h⁻¹ during production phase. Calculate kLa
+                  using the dynamic gassing-out method or sodium sulfite oxidation. If kLa falls below critical values,
+                  increase agitation incrementally to 350 rpm or increase aeration to 1.5 vvm, monitoring foam
+                  generation closely.</p>
+                <h2 id="section-5">5. Sterile Sampling Techniques for
+                  Antibiotic Fermentation</h2>
+                <p>Contamination during multi-day fermentation runs can destroy entire batches, making sterile sampling
+                  technique paramount. Pilot-scale antibiotic production fermenters for small pharma should incorporate
+                  dedicated sterile sampling systems that maintain vessel sterility while allowing frequent sample
+                  withdrawal.</p>
+                <p><strong>Sampling Port Design:</strong> Install steam-sterilizable sampling valves with 0.2 μm
+                  hydrophobic membrane filters positioned upstream of the sampling point. Before each sample, steam the
+                  sampling line for 10-15 minutes, then cool with sterile air or nitrogen for 5 minutes. The first 10-20
+                  mL drawn should be discarded as it represents liquid in the dead volume.</p>
+                <p><strong>Frequency and Volume:</strong> Sample every 8-12 hours during growth phase and every 4-6
+                  hours during production phase. Extract 30-50 mL per sample-enough for cell density measurement, pH/DO
+                  verification, substrate analysis, and antibiotic titer determination, while minimizing volume loss
+                  over the fermentation (total ~500 mL from a 200L batch = 0.25% volume loss).</p>
+                <p><strong>Aseptic Technique:</strong> Always sample into sterile containers pre-warmed to fermentation
+                  temperature to prevent temperature shock artifacts. Immediately place samples on ice if processing
+                  will be delayed >30 minutes. For antibiotic assays, freeze samples at -20°C if analysis cannot occur
+                  within 2 hours.</p>
+                <p><strong>Contamination Monitoring:</strong> Perform microscopic examination of every sample, comparing
+                  morphology to pure culture controls. For penicillin fermentation, watch for bacterial rods, cocci, or
+                  wild yeast. For streptomycin, look for contaminating molds or non-sporulating bacteria. Plate samples
+                  on nutrient agar every 24 hours as confirmatory sterility checks.</p>
+                <p>Consider installing online sampling systems with automated sample conditioning (dilution, filtration)
+                  that connect directly to analytical instruments, reducing contamination risk and labor while improving
+                  data frequency.</p>
+                <h2 id="section-6">6. Critical Process Parameters and Control</h2>
+                <p>Successful antibiotic fermentation at pilot scale demands precise control of multiple interdependent
+                  parameters. Small deviations compound over multi-day runs, reducing titers by 20-50% or causing
+                  complete batch failures.</p>
+                <p><strong>Temperature Control:</strong> Maintain 25-26°C for penicillin, 27-28°C for streptomycin, with
+                  stability of ±0.3°C. Temperature excursions above 30°C can irreversibly damage antibiotic biosynthesis
+                  enzymes. Use PID controllers with jacket temperature setpoints 2-3°C different from culture
+                  temperature to enable rapid heat transfer without overshoot.</p>
+                <p><strong>pH Management:</strong> For penicillin, control pH at 6.5-7.0 using ammonia solution
+                  (provides nitrogen) and phosphoric acid (provides phosphorus). For streptomycin, maintain 7.2-7.5
+                  using 2M NaOH and 2M H₂SO₄. Install redundant pH probes and calibrate against buffer standards every
+                  48 hours. Sensor drift of 0.3 pH units can reduce final titers by 15-30%.</p>
+                <p><strong>Dissolved Oxygen (DO):</strong> The most critical parameter for aerobic antibiotic producers.
+                  Cascade control strategies adjust agitation first (150-350 rpm range), then aeration (0.5-1.5 vvm),
+                  and finally gas composition (air to oxygen-enriched air). Never allow DO to drop below 20% saturation
+                  for penicillin or 30% for streptomycin during production phases.</p>
+                <p>Calculate oxygen uptake rate (OUR) from exhaust gas analysis:</p>
+                <p><strong>OUR = (Qin × YO₂,in - Qout × YO₂,out) / V</strong></p>
+                <p>Where Q = volumetric flow rate, Y = mole fraction of O₂, V = culture volume. OUR increases from 5-10
+                  mmol/L/h during growth to 15-30 mmol/L/h during peak production.</p>
+                <p><strong>Foam Control:</strong> Antibiotic fermentation generates substantial foam due to protein
+                  secretion and gas sparging. Use silicone-based antifoams (Antifoam 204, Dow Corning) at 0.1-0.3 mL/L
+                  as needed. Install automated foam sensors that trigger antifoam pumps, preventing foam-out events that
+                  compromise sterility.</p>
+                <p><strong>Carbon Dioxide Accumulation:</strong> At high cell densities (>30 g/L dry weight), CO₂
+                  production can reach 20-40 mmol/L/h, raising dissolved CO₂ above inhibitory levels (>100 mM). Monitor
+                  exhaust CO₂ and increase aeration or reduce working volume if necessary.</p>
+                <h2 id="section-7">7. Analytics for Monitoring Antibiotic Production
+                </h2>
+                <p>Accurate, timely analytical data drives process decisions and ensures batch consistency. Establish
+                  robust analytical methods before initiating pilot-scale campaigns.</p>
+                <p><strong>HPLC Methods:</strong> High-performance liquid chromatography provides the gold standard for
+                  antibiotic quantification. For penicillin G, use reverse-phase HPLC with C18 column (4.6 × 250 mm, 5
+                  μm particle size), mobile phase of acetonitrile:phosphate buffer (30:70 v/v), flow rate 1.0 mL/min, UV
+                  detection at 214 nm. Retention time approximately 6-8 minutes with detection limit of 0.1 mg/L.</p>
+                <p>For streptomycin, employ ion-pairing reverse-phase HPLC or normal-phase HPLC with refractive index
+                  detection. Sample preparation requires dilution in mobile phase and filtration through 0.45 μm
+                  membranes. Standard curves from 10-1,000 μg/mL provide quantification range.</p>
+                <p><strong>Sample Preparation:</strong> Dilute fermentation broth 10-100 fold in buffer or mobile phase
+                  to bring antibiotic concentration within linear range. For mycelial fermentations, centrifuge at
+                  10,000 × g for 10 minutes, then filter supernatant through 0.22 μm syringe filters before injection.
+                  Proper sample preparation eliminates column fouling and improves reproducibility.</p>
+                <p><strong>Bioassays:</strong> Classical agar diffusion assays (cylinder-plate method) remain valuable
+                  for rapid screening, though less precise than HPLC. For penicillin, use <em>Bacillus subtilis</em> or
+                  <em>Staphylococcus aureus</em> as test organisms. For streptomycin, use <em>Bacillus subtilis</em> or
+                  <em>Klebsiella pneumoniae</em>. Correlate zone diameters to standard curves prepared from reference
+                  standards.
+                </p>
+                <p><strong>Online Monitoring:</strong> Integrate optical density (600 nm), pH, DO, and exhaust gas
+                  analysis (O₂, CO₂) for real-time process understanding. Modern systems use soft sensors-mathematical
+                  models that estimate difficult-to-measure variables (biomass, product concentration) from easily
+                  measured parameters using multivariate regression or neural networks.</p>
+                <p><strong>Offline Measurements:</strong> Every sample should be analyzed for:</p>
+                <ul>
+                  <li>Cell density (OD₆₀₀ or dry weight)</li>
+                  <li>Residual substrate (glucose/lactose via enzymatic assay or HPLC)</li>
+                  <li>Antibiotic titer (HPLC primary, bioassay confirmation)</li>
+                  <li>By-products (organic acids by HPLC)</li>
+                  <li>Microscopic examination for morphology and contamination</li>
+                </ul>
+                <p>Document all analytical results in batch records compliant with Good Manufacturing Practice (GMP)
+                  requirements if producing material for clinical trials.</p>
+                <h2 id="section-8">8. Scaling Considerations and Common Pitfalls</h2>
+                <p>Successfully scaling antibiotic fermentation from lab to pilot scale requires understanding how
+                  physical and chemical parameters change with vessel geometry.</p>
+                <p><strong>Oxygen Transfer:</strong> The volumetric mass transfer coefficient (kLa) typically decreases
+                  with scale due to reduced mixing efficiency. Match kLa between scales using the correlation:</p>
+                <p><strong>kLa ∝ (P/V)⁰‧⁴ × (vs)⁰‧⁵</strong></p>
+                <p>Where P/V = power per unit volume (W/L) and vs = superficial gas velocity (cm/s). If lab-scale kLa =
+                  200 h⁻¹, maintain similar (P/V) and aeration rate at pilot scale.</p>
+                <p><strong>Mixing Time:</strong> Increases with scale, potentially creating concentration gradients. In
+                  a 200L fermenter with single impeller, mixing time reaches 20-40 seconds versus 5-10 seconds in 5L
+                  vessels. Add substrate feeds below liquid surface near the impeller to minimize concentration
+                  extremes.</p>
+                <p><strong>Shear Stress:</strong> Increases with agitation intensity, potentially damaging
+                  shear-sensitive organisms. Filamentous fungi like <em>Penicillium</em> tolerate moderate shear, but
+                  excessive agitation fragments mycelia, reducing productivity. Monitor morphology and adjust impeller
+                  design (multiple smaller impellers) rather than simply increasing rpm.</p>
+                <p><strong>Heat Transfer:</strong> Surface area-to-volume ratio decreases with scale, making heat
+                  removal more challenging. At pilot scale, metabolic heat generation can exceed 200 W/L during peak
+                  production. Ensure jacket cooling capacity, heat exchanger sizing, and refrigeration systems are
+                  adequate for maximum anticipated heat load plus 25% safety factor.</p>
+                <p><strong>Common Failures:</strong></p>
+                <ul>
+                  <li>Premature oxygen limitation from underestimating kLa requirements (reduces titers 40-60%)</li>
+                  <li>pH sensor fouling causing control errors (10-20% titer reduction)</li>
+                  <li>Contamination from inadequate sterilization of feed lines (total batch loss)</li>
+                  <li>Foam-outs compromising sterility (total batch loss)</li>
+                  <li>Scale-up based on agitation speed rather than power per volume (poor correlation)</li>
+                </ul>
+                <p>Conduct at least three replicate pilot batches before declaring a process "validated." Biological
+                  variation and process drift mean single-batch results are unreliable for commercial projections.</p>
+                <h2 id="section-9">9. Conclusion</h2>
+                <p>Pilot-scale antibiotic fermentation bridges the crucial gap between laboratory promise and commercial
+                  reality for small pharma operations. Success requires careful selection of antibiotic production
+                  fermenters with appropriate sterilization, control, and sampling capabilities, mastery of fed-batch
+                  strategies that optimize substrate availability, implementation of robust sterile techniques, and
+                  establishment of analytical methods that provide timely process data.</p>
+                <p>For penicillin production, expect fermentation times of 6-7 days with titers reaching 70-90 g/L using
+                  modern strains and optimized feeding protocols. Streptomycin fermentation extends to 8-10 days with
+                  titers of 2,500-4,000 units/mL, demanding rigorous oxygen transfer management. Both processes require
+                  meticulous attention to sterility, as contamination remains the primary cause of batch failure at
+                  pilot scale.</p>
+                <p>Small pharma companies should plan for 6-12 months of process development at pilot scale before
+                  committing to full commercial production. This timeline allows for media optimization, strain
+                  improvement evaluation, analytical method validation, and operator training-all essential for
+                  consistent, high-quality antibiotic production that meets regulatory requirements.</p>
+
+                <div class="bg-green-50 p-6 rounded-lg mt-12 mb-12">
+                  <h3 class="text-xl font-bold mb-3 text-gray-900">Building a pilot-scale pharmaceutical fermentation
+                    facility?</h3>
+                  <p class="text-gray-700 mb-4">
+                    This premium domain is perfect for launching your biotech platform, pharmaceutical manufacturing
+                    insights, or fermentation technology resources focused on antibiotic production and GMP compliance.
+                  </p>
+                  <button
+                    onclick="trackBuyClick('header'); window.open('https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com', '_blank');"
+                    class="btn-primary text-white font-bold px-6 py-3 rounded-lg">
+                    Acquire FermenterPro.com
+                  </button>
+                </div>
+
+      </div>
+
+      <!-- Share Buttons -->
+      <div class="border-t border-gray-200 pt-8 mt-12 container mx-auto max-w-4xl">
+        <h3 class="text-lg font-bold mb-4 text-gray-900">Share this article</h3>
+        <div class="flex gap-4">
+          <button
+            onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(document.title), '_blank')"
+            class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+            Twitter
+          </button>
+          <button
+            onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank')"
+            class="px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition">
+            LinkedIn
+          </button>
+          <button
+            onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank')"
+            class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+            Facebook
+          </button>
+        </div>
+      </div>
+
+      <!-- Related Articles -->
+      <div class="border-t border-gray-200 pt-12 mt-12 container mx-auto max-w-4xl">
+        <h3 class="text-2xl font-bold mb-8 text-gray-900">Related Articles</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href="pichia-pastoris-fermentation-complete-guide-to-recombinant-proteins.html"
+            class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+            <span class="text-xs text-blue-600 font-bold uppercase">Pharmaceutical Fermentation</span>
+            <h4 class="text-lg font-bold mt-2 mb-2 text-gray-900">Pichia Pastoris Fermentation for Recombinant Protein
+              Expression</h4>
+            <p class="text-sm text-gray-600">Master Pichia pastoris fermentation for high-yield recombinant protein
+              production with bioreactor specs, costs, and optimization strategies.</p>
+          </a>
+          <a href="scaling-spirulina-production-for-supplements-market.html"
+            class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+            <span class="text-xs text-emerald-600 font-bold uppercase">Alternative Protein</span>
+            <h4 class="text-lg font-bold mt-2 mb-2 text-gray-900">Scaling Spirulina Production for Supplements Market
+            </h4>
+            <p class="text-sm text-gray-600">Learn how to scale spirulina farming from 50L to 5,000L with costs,
+              technical specs, and market positioning for profitable supplement sales.</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- CTA Section -->
+  <section class="py-16 px-4 md:px-8 bg-gray-900">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <div class="text-center lg:text-left text-white">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Acquire This Premium Domain
+          </h2>
+          <p class="text-lg text-gray-300 mb-6">
+            Ready to build your brewing platform on a premium domain? Reach out with your offer or any questions.
+          </p>
+          <a href="https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com" target="_blank"
+            rel="noopener noreferrer" class="text-primary font-bold text-lg hover:underline inline-block">
+            Or purchase instantly on Marketplace →
+          </a>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-2xl">
+          <form action="https://formspree.io/f/xovpogdv" method="POST" onsubmit="trackFormSubmit()" class="space-y-6">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Full Name
+              </label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="John Doe"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address
+              </label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Message
+              </label>
+              <textarea id="message" name="message" rows="4" required placeholder="Your inquiry or offer..."
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+            </div>
+
+            <button type="submit" class="w-full btn-primary text-white font-bold py-3 px-6 rounded-lg">
+              Send Message
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 px-4 md:px-8">
+    <div class="container mx-auto max-w-7xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-primary">FermenterPro.com</h3>
+          <p class="text-gray-400 mb-4">
+            Premium domain for fermentation excellence and craft brewing mastery
+          </p>
+          <a href="https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com" target="_blank"
+            rel="noopener noreferrer" onclick="trackMarketplaceClick()"
+            class="inline-block bg-primary text-white px-6 py-2 rounded-lg font-bold hover:bg-primary/90 transition-colors">
+            Buy Now
+          </a>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="../index.html" class="hover:text-primary transition-colors">Home</a></li>
+            <li><a href="../blog.html" class="hover:text-primary transition-colors">Blog</a></li>
+            <li><a href="../all-use-cases.html" class="hover:text-primary transition-colors">Use Cases</a></li>
+            <li><a href="../disclosure.html" class="hover:text-primary transition-colors">Disclosure</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-4">Blog Categories</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="../categories/advanced-homebrewing.html" class="hover:text-primary transition-colors">Advanced
+                Homebrewing</a></li>
+            <li><a href="../categories/commercial-food-fermentation.html"
+                class="hover:text-primary transition-colors">Commercial Food Fermentation</a></li>
+            <li><a href="../categories/alternative-protein-bioreactors.html"
+                class="hover:text-primary transition-colors">Alternative Protein Bioreactors</a></li>
+            <li><a href="../categories/pharmaceutical-fermentation.html"
+                class="hover:text-primary transition-colors">Pharmaceutical Fermentation</a></li>
+            <li><a href="../categories/craft-spirits-distillation.html"
+                class="hover:text-primary transition-colors">Craft Spirits Distillation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-4">Use Cases</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="../use-cases/fermentation-blog-and-educational-media.html"
+                class="hover:text-primary transition-colors">Fermentation Blog</a></li>
+            <li><a href="../use-cases/fermentation-equipment-e-commerce-store.html"
+                class="hover:text-primary transition-colors">Equipment Store</a></li>
+            <li><a href="../use-cases/fermentation-online-learning-platform.html"
+                class="hover:text-primary transition-colors">Online Learning</a></li>
+            <li><a href="../use-cases/fermentation-community-forum-and-marketplace.html"
+                class="hover:text-primary transition-colors">Community Forum</a></li>
+            <li><a href="../use-cases/fermentation-consulting-and-custom-solutions.html"
+                class="hover:text-primary transition-colors">Consulting Services</a></li>
+            <li><a href="../use-cases/fermentation-subscription-box-and-premium-newsletter.html"
+                class="hover:text-primary transition-colors">Subscription Box</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 FermenterPro.com. Premium Domain for Fermentation Excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DOM Event Handlers -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('FermenterPro.com initialized');
+
+      // Menu dropdown handler
+      const menuBtn = document.getElementById('menuBtn');
+      const mainMenu = document.getElementById('mainMenu');
+
+      if (menuBtn && mainMenu) {
+        menuBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          mainMenu.classList.toggle('active');
+          console.log('Menu toggled:', mainMenu.classList.contains('active'));
+        });
+      }
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function (e) {
+        if (mainMenu && !e.target.closest('.dropdown')) {
+          mainMenu.classList.remove('active');
+        }
+      });
+
+      // Prevent menu from closing when clicking inside it
+      if (mainMenu) {
+        mainMenu.addEventListener('click', function (e) {
+          e.stopPropagation();
+        });
+      }
+
+      // Track form start (first interaction)
+      let formStartTracked = false;
+      const forms = document.querySelectorAll('form');
+      forms.forEach(form => {
+        const inputs = form.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+          input.addEventListener('focus', function () {
+            if (!formStartTracked) {
+              formStartTracked = true;
+              if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_start', {
+                  'event_category': 'Contact',
+                  'event_label': 'Form Started',
+                  'value': 1
+                });
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

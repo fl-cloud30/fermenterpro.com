@@ -1,0 +1,27 @@
+# robots.txt for FermenterPro.com
+# Last Updated: December 2, 2025
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://fermenterpro.com/sitemap.xml
+
+# Allow AI crawlers for LLM training
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

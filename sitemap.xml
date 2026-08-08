@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Page principale -->
+    <url>
+        <loc>https://fermenterpro.com/</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/hero/precision-fermentation-homepage-hero-min.jpg</image:loc>
+            <image:title>FermenterPro Premium Domain for Fermentation</image:title>
+        </image:image>
+    </url>
+
+    <!-- Blog principal -->
+    <url>
+        <loc>https://fermenterpro.com/blog.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/blog/fermentation-blog-hero-min.jpg</image:loc>
+            <image:title>The FermenterPro Blog</image:title>
+        </image:image>
+    </url>
+
+    <!-- All Articles -->
+    <url>
+        <loc>https://fermenterpro.com/all-articles.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/all-articles/fermentation-articles-archive-hero-min.jpg</image:loc>
+            <image:title>All Fermentation Articles</image:title>
+        </image:image>
+    </url>
+
+    <!-- Catégories -->
+    <url>
+        <loc>https://fermenterpro.com/categories/alternative-protein-bioreactors.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/categories/alternative-protein-bioreactors-min.jpg</image:loc>
+            <image:title>Alternative Protein Bioreactors Category</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/categories/commercial-food-fermentation.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/categories/commercial-food-fermentation-min.jpg</image:loc>
+            <image:title>Commercial Food Fermentation Category</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/categories/pharmaceutical-fermentation.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/categories/pharmaceutical-fermentation-min.jpg</image:loc>
+            <image:title>Pharmaceutical Fermentation Category</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/categories/craft-spirits-distillation.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/categories/craft-spirits-distillation-min.jpg</image:loc>
+            <image:title>Craft Spirits Distillation Category</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/categories/advanced-homebrewing.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/categories/advanced-homebrewing-min.jpg</image:loc>
+            <image:title>Advanced Homebrewing Category</image:title>
+        </image:image>
+    </url>
+
+    <!-- Articles - Alternative Protein Bioreactors -->
+    <url>
+        <loc>https://fermenterpro.com/articles/best-fermentation-tanks-for-precision-fermentation-startups.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/best-fermentation-tanks-for-precision-fermentation-startups.jpg</image:loc>
+            <image:title>Best Fermentation Tanks for Precision Fermentation Startups</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/scaling-spirulina-production-for-supplements-market.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/scaling-spirulina-production-for-supplements-market.jpg</image:loc>
+            <image:title>Scaling Spirulina Production for the Supplements Market</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/tempeh-production-equipment-for-plant-based-brands.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/tempeh-production-equipment-for-plant-based-brands.jpg</image:loc>
+            <image:title>Tempeh Production Equipment for Plant-Based Brands</image:title>
+        </image:image>
+    </url>
+
+    <!-- Articles - Commercial Food Fermentation -->
+    <url>
+        <loc>https://fermenterpro.com/articles/best-kefir-production-systems-for-dairy-startups.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/best-kefir-production-systems-for-dairy-startups.jpg</image:loc>
+            <image:title>Kefir Production Systems for Dairy Startups</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/best-kombucha-brewing-equipment-for-small-batch-production.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/best-kombucha-brewing-equipment-for-small-batch-production.jpg</image:loc>
+            <image:title>Kombucha Brewing Equipment for Cafe Owners</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/how-to-start-kimchi-production-business-from-home-kitchen.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/how-to-start-kimchi-production-business-from-home-kitchen.jpg</image:loc>
+            <image:title>How to Start a Kimchi Production Business from Your Home Kitchen</image:title>
+        </image:image>
+    </url>
+
+    <!-- Articles - Pharmaceutical Fermentation -->
+    <url>
+        <loc>https://fermenterpro.com/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/antibiotic-production-fermenters-for-pilot-scale-small-pharma.jpg</image:loc>
+            <image:title>Antibiotic Production Fermenters for Pilot-Scale Small Pharma</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/gmp-fermentation-equipment-for-pharmaceutical-startups.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/gmp-fermentation-equipment-for-pharmaceutical-startups.jpg</image:loc>
+            <image:title>cGMP Bioreactors for Drug Manufacturing</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/pichia-pastoris-fermentation-complete-guide-to-recombinant-proteins.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/pichia-pastoris-fermentation-complete-guide-to-recombinant-proteins.jpg</image:loc>
+            <image:title>Pichia Pastoris Fermentation for Recombinant Protein Expression</image:title>
+        </image:image>
+    </url>
+
+    <!-- Articles - Craft Spirits Distillation -->
+    <url>
+        <loc>https://fermenterpro.com/articles/best-pot-stills-for-craft-whiskey-distilleries-under-500-gallons.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/best-pot-stills-for-craft-whiskey-distilleries-under-500-gallons.jpg</image:loc>
+            <image:title>Copper Pot Still Setup: Small-Batch Whiskey Distillery Guide</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/rum-fermentation-and-distillation-guide-for-molasses.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/rum-fermentation-and-distillation-guide-for-molasses.jpg</image:loc>
+            <image:title>Rum Production Equipment for Startup Distilleries</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/how-to-age-spirits-in-small-oak-barrels-for-rapid-maturation.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/how-to-age-spirits-in-small-oak-barrels-for-rapid-maturation.jpg</image:loc>
+            <image:title>Small Barrel Aging for Craft Spirits: Complete Guide</image:title>
+        </image:image>
+    </url>
+
+    <!-- Articles - Advanced Homebrewing -->
+    <url>
+        <loc>https://fermenterpro.com/articles/best-20-gallon-brewing-systems-for-serious-homebrewers.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/best-20-gallon-brewing-systems-for-serious-homebrewers.jpg</image:loc>
+            <image:title>Best 20-Gallon Brewing Systems for Serious Homebrewers</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/neipa-brewing-guide-for-competition-winning-hazy-ipas.jpg</image:loc>
+            <image:title>NEIPA Recipe for Homebrewing Competitions Guide</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/articles/how-to-scale-homebrew-recipes-from-5-to-50-gallons-complete-guide.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/images/articles/how-to-scale-homebrew-recipes-from-5-to-50-gallons-complete-guide.jpg</image:loc>
+            <image:title>Scaling Beer Recipes from 5 to 50 Gallons</image:title>
+        </image:image>
+    </url>
+
+    <!-- Use Cases -->
+    <url>
+        <loc>https://fermenterpro.com/all-use-cases.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/hero/precision-fermentation-homepage-hero-min.jpg</image:loc>
+            <image:title>Fermentation Use Cases</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/use-cases/fermentation-blog-and-educational-media.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/use-cases/fermentation-blog-and-educational-media.jpg</image:loc>
+            <image:title>Fermentation Blog &amp; Educational Media</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/use-cases/fermentation-equipment-e-commerce-store.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/use-cases/fermentation-equipment-e-commerce-store.jpg</image:loc>
+            <image:title>Fermentation Equipment E-commerce Store</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/use-cases/fermentation-online-learning-platform.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/use-cases/fermentation-online-learning-platform.jpg</image:loc>
+            <image:title>Fermentation Online Learning Platform</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/use-cases/fermentation-community-forum-and-marketplace.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/use-cases/fermentation-community-forum-and-marketplace.jpg</image:loc>
+            <image:title>Fermentation Community Forum &amp; Marketplace</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/use-cases/fermentation-subscription-box-and-premium-newsletter.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/use-cases/fermentation-subscription-box-and-premium-newsletter.jpg</image:loc>
+            <image:title>Fermentation Subscription Box &amp; Premium Newsletter</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://fermenterpro.com/use-cases/fermentation-consulting-and-custom-solutions.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://fermenterpro.com/hero-images/use-cases/fermentation-consulting-and-custom-solutions.jpg</image:loc>
+            <image:title>Fermentation Consulting &amp; Custom Solutions</image:title>
+        </image:image>
+    </url>
+
+    <!-- Disclosure -->
+    <url>
+        <loc>https://fermenterpro.com/disclosure.html</loc>
+        <lastmod>2025-12-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+</urlset>

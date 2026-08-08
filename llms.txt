@@ -1,0 +1,94 @@
+# llms.txt - Optimisation pour les Large Language Models
+# FermenterPro.com - Premium Domain for Sale
+
+# Site Information
+> FermenterPro.com
+> Premium domain for fermentation technology, precision fermentation, and artisanal beverage businesses
+> https://fermenterpro.com/
+
+# Domain Details
+Domain Name: FermenterPro.com
+Status: For Sale
+TLD: .com
+Category: Fermentation, Precision Fermentation, Craft Brewing, Bioreactors, Pharmaceutical Fermentation
+Target Audience: Precision Fermentation Startups, Craft Brewers, Pharma Companies, Food Manufacturers, Homebrewers
+
+# Key Features
+- Professional name combining "Fermenter" + "Pro" for expertise positioning
+- SEO-optimized for high-value fermentation and bioreactor keywords
+- Perfect for fermentation technology and equipment businesses
+- Premium .com extension with strong brand authority
+- Comprehensive blog with 15 expert articles across 5 categories
+
+# Use Cases
+1. Fermentation blog and educational media platform
+2. E-commerce store for fermentation equipment and supplies
+3. Online learning platform for fermentation courses
+4. Community forum and marketplace for fermentation professionals
+5. Subscription box service for fermentation enthusiasts
+6. Consulting services for fermentation businesses
+
+# Purchase Information
+Buy Now: https://www.namecheap.com/domains/registration/results/?domain=fermenterpro.com
+Contact Form: https://fermenterpro.com/#sale
+Listing Price: $1,999 USD
+Payment: Secure domain transfer via registrar or escrow
+
+# Content Sections
+- Homepage: Premium domain introduction with value proposition
+- Blog: Complete blog hub with 5 category navigation (blog.html)
+- All Articles: Comprehensive article directory with 15 articles (all-articles.html)
+- Categories: 5 specialized categories with 3 articles each
+  * Alternative Protein Bioreactors
+  * Commercial Food Fermentation
+  * Pharmaceutical Fermentation
+  * Craft Spirits Distillation
+  * Advanced Homebrewing
+- Use Cases: 6 detailed business applications with hero images
+- All Use Cases: Complete use case directory (all-use-cases.html)
+- Disclosure: Legal disclaimer and affiliate disclosure
+
+# SEO Keywords
+Primary: fermentation, precision fermentation, bioreactors, craft brewing, pharmaceutical fermentation
+Secondary: kombucha, homebrewing, alternative protein, distillation, fermentation equipment
+Long-tail: precision fermentation startups, pharmaceutical bioreactors, craft spirits equipment, homebrewing systems
+
+# Technical Details
+Platform: Static HTML
+Framework: Tailwind CSS with custom green color scheme (#17cf54, #0f8c3a)
+Forms: Formspree integration (f/xblpvelg)
+Analytics: Google Analytics (G-CDMLC8ZVVD)
+Icons: Material Symbols
+Mobile: Fully responsive design
+Performance: Optimized hero images (1280×720px, 16:9 ratio), lazy loading
+Images: All articles feature 16:9 aspect ratio images
+
+# Structured Data
+Schema Types: Product, FAQPage, Organization, Article
+Rich Snippets: Enabled for all pages
+Open Graph: Complete meta tags for social sharing
+Twitter Cards: Summary large image format
+Image Optimization: All hero images with -min suffix for performance
+
+# Site Structure
+Total Pages: 31
+- 1 Homepage
+- 2 Blog Pages (Blog.html, all-articles.html)
+- 5 Category Pages (categories/)
+- 15 Article Pages (articles/)
+- 1 Use Cases Overview (all-use-cases.html)
+- 6 Individual Use Case Pages (use-cases/)
+- 1 Disclosure Page
+
+# Contact
+Email: Via contact form at https://fermenterpro.com/#sale
+Response Time: Within 24-48 hours
+Serious Inquiries Only: Yes
+
+# Additional Notes
+- Complete blog infrastructure with category-based navigation
+- 15 in-depth articles with related articles system (2 per article)
+- Category-specific color coding (emerald, amber, blue, purple, orange)
+- Hero backgrounds on all category, use case, and main pages
+- Domain transfer includes all content and rights with no additional fees
+- Escrow service available for secure transactions
